@@ -3,7 +3,7 @@
 /*---------------VALORANTAPI---------------*/
 /*-----------------------------------------*/
 
-   
+
 const app = document.getElementById('root');
 
 const logo = document.createElement('img');
@@ -97,4 +97,35 @@ function _scrollTop() {
     top: 0,
     behavior: 'smooth'
   });
+}
+
+function hideModal() {
+  const modal = document.querySelector('#myDiv');
+  modal.classList.remove('show');
+}
+function showModal() {
+  const modal = document.querySelector('#myDiv');
+  modal.classList.add('show');
+}
+/*-----------------------------------------*/
+/*---Validad fORMULARUI---*/
+/*-----------------------------------------*/
+
+function Validate() {
+  //let data = {
+  let name1 = document.getElementById("name").value;
+  let surname1 = document.getElementById("surname").value;
+  let mail = document.getElementById("mail").value;
+  let link = document.getElementById("link").value;
+  let mapa = document.getElementById("Map").value;
+  let personaje = document.getElementById("Character").value;
+
+  //const data = '{name2:  "${this.name1}"  , surname2: "${this.surname1}", phone2: ${this.phone1},pass2: "${this.pass1}", fecha: ${this.day1} + "/" + ${this.month1} + "/" + ${this.year1}}';
+  if (name1 === "" || surname1 === "" || mail === "" || link === "" || mapa === "Mapa" || personaje === "Personaje") {
+    alert("Falta contenido");
+  } else {
+    alert("Gracias por el envio")
+
+    //alert(JSON.stringify(data));
+  }
 }

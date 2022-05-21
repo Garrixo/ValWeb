@@ -1,8 +1,3 @@
-
-@font-face {
-    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-}
-
 html {
     overflow-x: hidden;
     background-image: url("https://www.gvme.org/pages/get_image_large.php?id=4466");
@@ -11,6 +6,7 @@ html {
     /*filter: grayscale(70%);*/
     background-attachment: fixed;
     background-position: center center;
+    font-family: 'Anton', sans-serif;
 }
 
 * {
@@ -29,8 +25,9 @@ ul {
 }
 
 .espacio {
-    height: 500px;
+    height: 300px;
 }
+
 .bbar {
     background-color: black;
 }
@@ -57,7 +54,7 @@ ul {
 }
 
 header {
-    height: 80px;
+    height: 95px;
     border-bottom: solid;
     color: rgba(150, 150, 150, 0.062);
 }
@@ -76,6 +73,7 @@ a {
 h2 {
     font-weight: 30;
     width: 2000px;
+    font-family: 'VALORANT', sans-serif;
 }
 
 nav {
@@ -91,11 +89,12 @@ nav {
 
 
 .case {
-    box-shadow: inset 0 15 0 #ff4763;
+    box-shadow: inset 0 30 0 #ff4763;
     transition: box-shadow .2s;
     display: inline;
     padding: 30px;
     padding-right: 40px;
+    font-size: 20px;
 }
 
 .mline {
@@ -122,7 +121,7 @@ nav {
 
 .case:hover {
     margin: 0;
-    box-shadow: inset 0 -3px 0 #ff4763;
+    box-shadow: inset 0 -5px 0 #ff4763;
 }
 
 
@@ -243,6 +242,9 @@ nav {
 
 }
 
+.centrar {}
+
+
 .container {
     position: relative;
 }
@@ -259,14 +261,24 @@ nav {
 /*Scroll Top*/
 
 .section {
-    height: 400px;
-    background-color: #ff4763;
+    height: 600px;
+    background-color: #ffffff;
     color: white;
 }
 
-.green {
-    background-color: #ff4763;
+.about {
     color: white;
+    background-image: url("https://images2.alphacoders.com/120/thumb-1920-1204924.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+}
+
+.clips {
+    height: 400px;
+    background-color: black;
 }
 
 .arrow-up {
@@ -284,6 +296,11 @@ nav {
 
 .arrow-up.visible {
     opacity: 1;
+}
+
+svg {
+    fill: #bdbdbd;
+
 }
 
 
@@ -359,3 +376,110 @@ nav {
     }
 
 }
+
+/*----------------------------------------------*/
+/*-------------------paco el xocolatero---------------------*/
+/*----------------------------------------------*/
+
+.log {
+    background-color: rgb(255, 255, 255);
+    width: 432px;
+    border-radius: 8px;
+    margin-left: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Mapa,
+.Personaje {
+    margin-top: 10px;
+    margin-left: 60px;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-left: 10px;
+    width: 123px;
+    height: 40px;
+    border-width: 3px;
+    border-color: #e0e3e6;
+    border-width: 2px;
+}
+
+
+.inpn {
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 155px;
+    height: 10px;
+    border-color: #e0e3e6;
+    border-width: 2px;
+    background-color: #f5f6f7;
+    border-style: solid;
+}
+
+.inpt {
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 365px;
+    height: 10px;
+    border-width: 3px;
+    border-color: #e0e3e6;
+    border-width: 2px;
+    background-color: #f5f6f7;
+    border-style: solid;
+}
+
+.letter {
+    text-align: center;
+    font-size: 15px;
+    color: #3e81f3;
+}
+
+.h2 {
+    padding-bottom: 20px;
+    width: 500px;
+    height: 116px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.bx {
+    padding: 5px;
+    width: 105px;
+    display: inline-flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 6px;
+    font-size: 17px;
+    border-width: 3px;
+    border-color: #e0e3e6;
+    border-width: 2px;
+    border-style: solid;
+    padding-left: 5px;
+
+}
+
+.New {
+    background-color: #ff4763;
+    height: 36px;
+    width: 186px;
+    font-size: 17px;
+    margin: 30px;
+    margin-left: 100px;
+    border-color: #ff4763;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
+/*----------------------------------------------*/
+/*-------------------AGENTS---------------------*/
+/*----------------------------------------------*/

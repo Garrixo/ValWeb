@@ -3,7 +3,10 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/scripts.js"></script>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('http://fonts.cdnfonts.com/css/valorant');
+    </style>
 </head>
 
 <body>
@@ -48,11 +51,11 @@
             <nav>
                 <ul>
                     <li class="case">
-                        <a>About</a>
+                        <a>Info</a>
                     </li>
                     <li class="case">
                         <div class="dropdown-container">
-                            <a onclick="openDropdown()"> What we do <svg class="my-svg" version="1.1" width="10"
+                            <a onclick="openDropdown()"> Contenido <svg class="my-svg" version="1.1" width="10"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     x="0px" y="0px" viewBox="0 0 199.404 199.404"
                                     style="enable-background:new 0 0 199.404 199.404;" xml:space="preserve">
@@ -64,32 +67,30 @@
 
                             <div class="dropdown-content">
                                 <ul class="dropdown-menu">
-                                    <li> Menu 1</li>
-                                    <li> Menu 2</li>
-                                    <li> Menu 3</li>
-                                    <li> Menu 4</li>
+                                    <li><a href="./maps.html">MAPAS</a></li>
+                                    <li><a href="./weapons.html">ARMAS</a></li>
+                                    <li><a href="./agents.html">AGENTES</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
                     <li class="case">
-                        <a>Team</a>
+                        <a>Formulario</a>
                     </li>
                     <li class="case">
-                        <a>Insights</a>
+                        <a>CLIPS</a>
                     </li>
                 </ul>
             </nav>
             <div class="uptitle">
                 <h2>
-                    Web Desingn
+                    vAlorant
                 </h2>
             </div>
         </header>
         <div class="linea"></div>
         <div class="textbox">
-            <div class="title">Webdesign </div>
-            <div class="title"> Responsive layout .</div>
+            <div class="title">¿Que es Valorant?</div>
             <div class="subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -103,15 +104,72 @@
 
     </div>
     <div class="section">
-        <p>
-            Seccion1
-        </p>
+
+        Seccion1
+
     </div>
-    <div class="section green">
-        <p>
-            Seccion2
-        </p>
+    <div class="section about">
+        Seccions2
+
     </div>
+
+    <div class="section clips">
+        <main>
+            <div class="title">ENVIA TU CLIPACION</div>
+            <div id="myDiv" class="log">
+
+                <!--<hr class="alinea1">-->
+                <div class="namer">
+                    <input class="inpn" type="text" name="Name" placeholder="Nombre" maxlength="30" id="name">
+                    <input class="inpn" type="text" name="pass" maxlength="30" placeholder="Apellido" id="surname">
+                </div>
+                <input type="mail" class="inpt" name="pass" maxlength="30" placeholder="Mobile Number or email"
+                    id="mail">
+                <p>
+                    <input type="mail" class="inpt" name="pass" maxlength="30" placeholder="link del video" id="link">
+                <div class="name">
+                    <select class="Mapa" name="Mapa" id="Map">
+                        <option value="Mapa" selected>Mapa</option>
+                        <option value="BIND">BIND</option>
+                        <option value="ASCENT">ASCENT</option>
+                        <option value="BREEZE">BREEZE</option>
+                        <option value="FRACTURE">FRACTURE</option>
+                        <option value="ICEBOX">ICEBOX</option>
+                        <option value="HAVEN">HAVEN</option>
+                        <option value="SPLIT">SPLIT</option>
+
+                    </select>
+                    <select class="Personaje" name="Personaje" id="Character">
+                        <option value="Personaje" selected>Personaje</option>
+                        <option value="SOVA">SOVA</option>
+                        <option value="JETT">JETT</option>
+                        <option value="PHOENIX">PHOENIX</option>
+                        <option value="BREACH">BREACH</option>
+                        <option value="BRIMSTONE">BRIMSTONE</option>
+                        <option value="CYPHER">CYPHER</option>
+                        <option value="REYNA">REYNA</option>
+                        <option value="RAZE">RAZE</option>
+                        <option value="OMEN">OMEN</option>
+                        <option value="SAGE">SAGE</option>
+                        <option value="VIPER">VIPER</option>
+                        <option value="SKYE">SKYE</option>
+                        <option value="KILLJOY">KILLJOY</option>
+                        <option value="YORU">YORU</option>
+                        <option value="ASTRA">ASTRA</option>
+                        <option value="KAY/O">KAY/O</option>
+                        <option value="CHAMBER">CHAMBER</option>
+                        <option value="FADE">FADE</option>
+                    </select>
+                </div>
+
+                <input type="button" value="Enviar" class="New" onclick="Validate()">
+
+            </div>
+        </main>
+
+    </div>
+
+
 </body>
 
 </html>
