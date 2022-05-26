@@ -9,7 +9,8 @@
     </style>
 </head>
 
-<body>
+<body class="overf">
+
     <button onclick="_scrollTop()" class="arrow-up">
         <?xml version="1.0" encoding="iso-8859-1"?>
         <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,7 +28,7 @@
         </svg>
 
     </button>
-    <div>
+    <div class="fotofondo">
         <header>
 
             <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
@@ -40,7 +41,6 @@
                 <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
                         src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
                 </button>
-
                 <ul>
                     <li>About</li>
                     <li>What We Do</li>
@@ -53,7 +53,7 @@
                     <li class="case">
                         <a>Info</a>
                     </li>
-                    <li class="case">
+                    <!-- <li class="case">
                         <div class="dropdown-container">
                             <a onclick="openDropdown()"> Contenido <svg class="my-svg" version="1.1" width="10"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -73,12 +73,15 @@
                                 </ul>
                             </div>
                         </div>
+                    </li> -->
+                    <li class="case">
+                        <a href="./agents.html">Agentes</a>
                     </li>
                     <li class="case">
-                        <a>Formulario</a>
+                        <a href="./maps.html">Mapas</a>
                     </li>
                     <li class="case">
-                        <a>CLIPS</a>
+                        <a href="./agents.html">Armas</a>
                     </li>
                 </ul>
             </nav>
@@ -92,27 +95,46 @@
         <div class="textbox">
             <div class="title">¿Que es Valorant?</div>
             <div class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
                 ex
                 ea commodo consequat.
             </div>
             <div class="ll"><a> Find out more </a> </div>
+            <div class="vid">
+
+            </div>
         </div>
     </div>
-    <div class="espacio">
+    <div class="section agents">
+        <image class="fotoag" type="agentes"
+            src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png" alt=""></image>
+        <div>
+
+        </div>
+        <div class="boton" onclick="redirect(agents)">
+            <button class="btn btn--light">
+                <span class="btn__inner">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content">Agentes</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class=" section about">
+        Armas
 
     </div>
     <div class="section">
-
-        Seccion1
-
-    </div>
-    <div class="section about">
-        Seccions2
+        Mapas
 
     </div>
+    <div class="section">
+        Clips
 
+    </div>
     <div class="section clips">
         <main>
             <div class="title">ENVIA TU CLIPACION</div>
@@ -161,15 +183,10 @@
                         <option value="FADE">FADE</option>
                     </select>
                 </div>
-
                 <input type="button" value="Enviar" class="New" onclick="Validate()">
-
             </div>
         </main>
-
     </div>
-
-
 </body>
 
 </html>

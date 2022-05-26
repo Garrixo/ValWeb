@@ -129,3 +129,8 @@ function Validate() {
     //alert(JSON.stringify(data));
   }
 }
+
+function redirect(id) {
+  var id = id.value;
+  window.location.href = './' + id + '.html';
+}
