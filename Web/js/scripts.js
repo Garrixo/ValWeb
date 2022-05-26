@@ -130,7 +130,7 @@ function Validate() {
   }
 }
 
-function redirect(id) {
-  var id = id.value;
-  window.location.href = './' + id + '.html';
+function redirect() {
+ 
+  window.location.href ='./agents.html';
 }
