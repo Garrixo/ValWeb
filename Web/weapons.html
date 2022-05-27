@@ -1,59 +1,55 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleweapons.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         @import url('http://fonts.cdnfonts.com/css/valorant');
     </style>
+
+    <script>
+        function openSidebar() {
+            console.log('sidebar');
+            document.querySelector('.sidebar').classList.add('open');
+            document.getElementById('close').style.display = 'block';
+            const video = document.getElementById("video");
+            video.play();
+
+        }
+
+        function closeSidebar() {
+            console.log('sidebar');
+            document.querySelector('.sidebar').classList.remove('open');
+            document.getElementById('close').style.display = 'none';
+            const video = document.getElementById("video");
+            video.pause();
+        }
+    </script>
+    <script>
+        $('#audio-control').click(function () {
+            if ($("#myVideo").prop('muted')) {
+                $("#myVideo").prop('muted', false);
+                $(this).text('Mute');
+                // or toggle class, style it with a volume icon sprite, change background-position
+            } else {
+                $("#myVideo").prop('muted', true);
+                $(this).text('Unmute');
+            }
+        });
+    </script>
+
+
 </head>
+
 <body>
     <header>
-
-        <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
-        <div class="menu">
-            MENU
-        </div>
-        <div class="sidebar">
-            Lista:
-
-            <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
-                    src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
-            </button>
-
-            <ul>
-                <li>About</li>
-                <li>What We Do</li>
-                <li>Team</li>
-                <li>Insights</li>
-            </ul>
-        </div>
         <nav>
             <ul>
                 <li class="case">
                     <a href="./index.html">Info</a>
                 </li>
-                <!-- <li class="case">
-                    <div class="dropdown-container">
-                        <a onclick="openDropdown()"> Contenido <svg class="my-svg" version="1.1" width="10"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px" y="0px" viewBox="0 0 199.404 199.404"
-                                style="enable-background:new 0 0 199.404 199.404;" xml:space="preserve">
-                                <g>
-                                    <polygon
-                                        points="199.404,63.993 171.12,35.709 99.702,107.127 28.284,35.709 0,63.993 99.702,163.695 	" />
-                                </g>
-                            </svg></a>
-
-                        <div class="dropdown-content">
-                            <ul class="dropdown-menu">
-                                <li><a href="./maps.html">MAPAS</a></li>
-                                <li><a href="./weapons.html">ARMAS</a></li>
-                                <li><a href="./agents.html">AGENTES</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li> -->
                 <li class="case">
                     <a href="./agents.html">Agentes</a>
                 </li>
@@ -71,4 +67,222 @@
             </h2>
         </div>
     </header>
+    <div class="weapons-body">
+        <div class="language-selec">
+            <select id="language" onchange="selector()">
+                <option value="/?language=es-ES">Spanish</option>
+
+                <option value="/?language=en-US">English</option>
+
+                <option value="/?language=es-MX">Spanish(LATAM)</option>
+
+                <option value="/?language=fr-FR">French</option>
+
+                <option value="/?language=de-DE">Alemán</option>
+
+                <option value="/?language=ja-JP">Japones</option>
+
+                <option value="/?language=ko-KR">Koreano</option>
+
+                <option value="/?language=ar-AE">Arabic</option>
+
+                <option value="/?language=id-ID">Indonesian</option>
+
+                <option value="/?language=it-IT">Italian</option>
+
+                <option value="/?language=pt-BR">Portuguese (BR)</option>
+
+                <option value="/?language=pl-PL">Polish</option>
+
+                <option value="/?language=ru-RU">Russian</option>
+
+                <option value="/?language=th-TH">Thai</option>
+
+                <option value="/?language=tr-TR">Turkish</option>
+
+                <option value="/?language=vi-VN">Vietnamese</option>
+
+                <option value="/?language=zh-CN">Chinese(Simplified)</option>
+
+                <option value="/?language=zh-TW">Chinese</option>
+            </select>
+        </div>
+        <div class="weapons-title">
+
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias quaerat doloremque cumque cum
+                repellendus, sequi, necessitatibus temporibus animi labore maiores iste atque soluta ad! Eveniet
+                doloremque error magni optio!
+            </h1>
+        </div>
+        <div class="weaponCards" id="weaponCards" id="overflow">
+            <!--<div class="card" onclick="openSidebar(); weaponInfo(0)">
+                    <img id="weapon0" src="" />
+                    <div class="info">
+                        <h1>Vandal</h1>
+                        <p>Fusil de larga distancia</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openSidebar()">
+                    <img src="" />
+                    <div class="info">
+                        <h1>Vandal</h1>
+                        <p>Fusil de larga distancia</p>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross" id="close"><img
+                src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing"></button>
+        <section class="section-slider">
+            <video id="video" autoplay mute loop>
+                <source id="video-link" src="" type="video/mp4">
+            </video>
+            <img id="notvideo" src="">
+            <div class="parent">
+                <div class="scroll">
+                    <ul class="navigation" id="video-list">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function videoUrl(hmmmmmm) {
+                document.getElementById("selection-slider").src = "https://www.youtube.com/watch?v=7gEJTwsH6kw";
+            }
+        </script>
+    </div>
+    <script>
+        var lenguage = '/?language=es-ES';
+        var weaponSelected;
+        getDataFromApi()
+
+        async function weaponVideo(num) {
+            console.log(weaponSelected);
+            var url = 'https://valorant-api.com/v1/weapons/' + weaponSelected + lenguage;
+
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            var my_array = miRespuesta.data.skins[num].levels;
+            var last_element = my_array[my_array.length - 1];
+            console.log(last_element.streamedVideo);
+            if (last_element.streamedVideo == null) {
+                document.getElementById('notvideo').src = miRespuesta.data.skins[num].displayIcon;
+                const video = document.getElementById("video");
+                video.pause();
+                video.style.display = "none";
+
+            } else {
+                document.getElementById('video').src = last_element.streamedVideo;
+                const video = document.getElementById("video");
+                video.play();
+                video.style.display = "block";
+            }
+        }
+
+        async function weaponInfo(num) {
+            var url = 'https://valorant-api.com/v1/weapons' + lenguage;
+
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            weaponSelected = miRespuesta.data[num].uuid;
+            weaponSkins(weaponSelected);
+            weaponVideo(0);
+        }
+        async function weaponSkins(query) {
+            var url = 'https://valorant-api.com/v1/weapons/' + query + lenguage;
+
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            printSidebar(miRespuesta.data.skins)
+        }
+
+        function selector() {
+            var select = document.getElementById('language');
+            lenguage = select.options[select.selectedIndex].value;
+            getDataFromApi();
+        }
+        async function getDataFromApi() {
+            var url = 'https://valorant-api.com/v1/weapons' + lenguage;
+
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            printWeapons(miRespuesta.data);
+        }
+        function printSidebar(sidebar) {
+            var side = '';
+
+            sidebar.forEach(function (element, i) {
+                side += '<li onclick="weaponVideo(' + i + ')"><img src="' + element.displayIcon + '"></li>';
+            });
+            document.getElementById('video-list').innerHTML = side;
+        }
+
+        function printWeapons(weaponCard) {
+            var weapon = '';
+
+            weaponCard.forEach(function (element, i) {
+                weapon += '<div class="card" onclick="openSidebar(); weaponInfo(' + i + ')"><img class="weapon-img" id="weapon' + i + '" src="' + element.displayIcon + '" /><div class="info"><h1>' + element.displayName + '</div></div>';
+            });
+            document.getElementById('weaponCards').innerHTML = weapon;
+        }
+
+    </script>
+
+    <!--SCRIPT PARA SCROLL HORIZONTAL-->
+    <script>
+        const slider = document.querySelector('.parent');
+        let mouseDown = false;
+        let startX, scrollLeft;
+
+        let startDragging = function (e) {
+            mouseDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        };
+        let stopDragging = function (event) {
+            mouseDown = false;
+        };
+
+        slider.addEventListener('mousemove', (e) => {
+            e.preventDefault();
+            if (!mouseDown) { return; }
+            const x = e.pageX - slider.offsetLeft;
+            const scroll = x - startX;
+            slider.scrollLeft = scrollLeft - scroll;
+        });
+
+        // Add the event listeners
+        slider.addEventListener('mousedown', startDragging, false);
+        slider.addEventListener('mouseup', stopDragging, false);
+        slider.addEventListener('mouseleave', stopDragging, false);
+    </script>
 </body>
+
+</html>
