@@ -133,13 +133,26 @@
         </div>
     </div>
     <div class="sidebar" id="sidebar">
-        <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross" id="close"><img
-                src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing"></button>
+        <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross btnFilter" id="close">
+            <span class="btn__inner">
+                <span class="btn__slide"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="cross-closing" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
+            </svg>
+            </span>
+        </button>
+        <div class="info-displayer">
+            <div class="first-text" id="first-text">
+                Test
+            </div>
+            <div class="second-text">
+                Test2
+            </div>
+        </div>
         <section class="section-slider">
             <video id="video" autoplay mute loop>
                 <source id="video-link" src="" type="video/mp4">
             </video>
-            <img id="notvideo" src="">
+            <img class="img-skin" id="notvideo" src="">
             <div class="parent">
                 <div class="scroll">
                     <ul class="navigation" id="video-list">
@@ -179,13 +192,20 @@
                 const video = document.getElementById("video");
                 video.pause();
                 video.style.display = "none";
+                document.getElementById('notvideo').style.display = "block";
 
             } else {
                 document.getElementById('video').src = last_element.streamedVideo;
                 const video = document.getElementById("video");
                 video.play();
                 video.style.display = "block";
+                document.getElementById('notvideo').style.display = "none";
             }
+            document.getElementById('first-text').innerText = last_element.displayName;
+            var altura = document.getElementById('first-text').style.height;
+            if ( altura >= 80){
+                document.getElementById('info-displayer').style.height = 100 + (altura - 80)+"px";
+            } 
         }
 
         async function weaponInfo(num) {
