@@ -57,7 +57,7 @@
                     <a href="./maps.html">Mapas</a>
                 </li>
                 <li class="case">
-                    <a >Armas</a>
+                    <a>Armas</a>
                 </li>
             </ul>
         </nav>
@@ -136,17 +136,40 @@
         <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross btnFilter" id="close">
             <span class="btn__inner">
                 <span class="btn__slide"></span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="cross-closing" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="cross-closing" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                </svg>
             </span>
         </button>
+
+        <div class="gooey" id="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
         <div class="info-displayer">
-            <div class="first-text" id="first-text">
-                Test
-            </div>
-            <div class="second-text">
-                Test2
-            </div>
+            <nav class="meganav" id="menu">
+                <div class="menu-item highlight">
+                    <div class="menu-text">
+                        <a class="first-text" id="first-text"></a>
+                    </div>
+                    <div class="sub-menu double">
+                        <div id="weaponlevels">
+                            
+                        </div>
+                        <div class="bottom-container" id="weaponchromas">
+                            <div class="colores">Color1</div>
+                        </div>
+                        <div class="sub-menu-holder" id="sub-menu-holder"></div>
+                    </div>
+                </div>
+            </nav>
         </div>
         <section class="section-slider">
             <video id="video" autoplay mute loop>
@@ -161,12 +184,16 @@
                 </div>
             </div>
         </section>
-        <script type="text/javascript">
-            function videoUrl(hmmmmmm) {
-                document.getElementById("selection-slider").src = "https://www.youtube.com/watch?v=7gEJTwsH6kw";
-            }
-        </script>
+        
     </div>
+    <script>
+        $('video').on('loadstart', function (event) {
+                $('gooey').css('display','block');
+        });
+        $('video').on('canplay', function (event) {
+                $('gooey').css('display','none');
+        });
+    </script>
     <script>
         var lenguage = '/?language=es-ES';
         var weaponSelected;
@@ -175,7 +202,7 @@
         async function weaponVideo(num) {
             console.log(weaponSelected);
             var url = 'https://valorant-api.com/v1/weapons/' + weaponSelected + lenguage;
-
+            document.querySelector('.gooey').style.display = "block";
             var miRespuesta = await fetch(url,
                 {
                     method: 'GET',
@@ -184,6 +211,7 @@
             ).then(function (response) {
                 return response.json();
             });
+            document.querySelector('.gooey').style.display = "none";
             var my_array = miRespuesta.data.skins[num].levels;
             var last_element = my_array[my_array.length - 1];
             console.log(last_element.streamedVideo);
@@ -202,10 +230,8 @@
                 document.getElementById('notvideo').style.display = "none";
             }
             document.getElementById('first-text').innerText = last_element.displayName;
-            var altura = document.getElementById('first-text').style.height;
-            if ( altura >= 80){
-                document.getElementById('info-displayer').style.height = 100 + (altura - 80)+"px";
-            } 
+            printWeaponLevels(miRespuesta.data.skins[num].levels);
+            printWeaponChromas(miRespuesta.data.skins[num].chromas);
         }
 
         async function weaponInfo(num) {
@@ -236,7 +262,7 @@
             });
             printSidebar(miRespuesta.data.skins)
         }
-
+        /*LANGUAGE SELECTOR*/
         function selector() {
             var select = document.getElementById('language');
             lenguage = select.options[select.selectedIndex].value;
@@ -255,6 +281,26 @@
             });
             printWeapons(miRespuesta.data);
         }
+
+        /*SKIN LEVELS GENERATOR*/
+        function printWeaponLevels(levels){
+            var level ="";
+            levels.forEach(function (element, i) {
+                level += '<div class="icon-box gb a">'+ levels[i].displayName +'</div>';
+            });
+            document.getElementById('weaponlevels').innerHTML = level;
+        }
+
+        /*SKIN CHROMAS GENERATOR*/
+        function printWeaponChromas(chromas){
+            var chroma ="";
+            chromas.forEach(function (element, i) {
+                chroma += '<div><img class="colores" src="'+ chromas[i].swatch +'"></div>';
+            });
+            document.getElementById('weaponchromas').innerHTML = chroma;
+
+        }
+         /*WEAPON SIDEBAR SKIN GENERATOR*/
         function printSidebar(sidebar) {
             var side = '';
 
@@ -263,7 +309,7 @@
             });
             document.getElementById('video-list').innerHTML = side;
         }
-
+        /*WEAPON SIDEBAR CARD GENERATOR*/
         function printWeapons(weaponCard) {
             var weapon = '';
 
