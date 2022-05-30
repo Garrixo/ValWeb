@@ -40,7 +40,8 @@ ul {
 }
 
 .bbar {
-    background-color: black;
+    /*background-color: black;*/
+
 }
 
 .bbar,
@@ -66,7 +67,8 @@ ul {
 
 header {
     height: 80px;
-    background-color: rgba(30, 27, 27, 0.934);
+    /* background-color: rgba(30, 27, 27, 0.934); */
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0));
 }
 
 a {
@@ -136,9 +138,9 @@ a {
     align-items: flex-start;
 }
 
- .imageag {
+.imageag {
     width: 850px
-} 
+}
 
 
 h2 {
@@ -305,14 +307,16 @@ nav {
 /*Scroll Top*/
 
 .section {
-   
+
     background-color: #ffffff;
     color: white;
     width: 100%;
 }
 
 .agents {
-    background-color: /*#1d2331*/ #171153;
+    background-color:
+        /*#1d2331*/
+        #171153;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -322,33 +326,39 @@ nav {
 
 .weapons {
     color: white;
-    background-image: url("https://img1.gosuwall.com/hd/valorant-guns-weapons-wallpaper-hd-gosuwall.com-1_215.jpg?_gl=1*1vquelj*_ga*YW1wLUpoakdPR2xsYWNZUkk0WnZtM0xlSGc.");
+    background-image: url("https://img1.gosuwall.com/hd/valorant-guns-weapons-wallpaper-hd-gosuwall.com-1_215.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 700px;
 }
-.Mapas{
+
+.Mapas {
     background-image: url("https://sm.ign.com/ign_in/screenshot/default/breeze-screenshot-map-02_f2yc.jpg");
     height: 850px;
     background-size: cover;
-    
+
 
 }
-.Clipeo{
+
+.Clipeo {
     background-image: url("https://assets-prd.ignimgs.com/2020/03/02/reveal-canopy-valorant-1583129902400.jpg");
     height: 550px;
     background-size: cover;
     background-position: center center;
-    filter: blur(2px);
 }
 
 .coloc {
     float: left;
 }
 
-.clips {
+.footer {
     height: 400px;
     background-color: black;
+}
+
+.clips {
+    float: right;
+    padding: 50px;
 }
 
 .arrow-up {
