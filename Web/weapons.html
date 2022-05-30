@@ -197,7 +197,51 @@
     <script>
         var lenguage = '/?language=es-ES';
         var weaponSelected;
+        var weaponskin;
         getDataFromApi()
+
+        async function weaponlevel(num) {
+            var url = 'https://valorant-api.com/v1/weapons/' + weaponSelected + lenguage;
+            document.querySelector('.gooey').style.display = "block";
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            document.getElementById('video').src = miRespuesta.data.skins[weaponskin].levels[num].streamedVideo;
+            const video = document.getElementById("video");
+            video.play();
+            video.style.display = "block";
+            document.getElementById('notvideo').style.display = "none";
+            document.querySelector('.gooey').style.display = "none";
+            document.getElementById('first-text').innerText = miRespuesta.data.skins[weaponskin].levels[num].displayName;
+        
+        }
+
+        async function weaponchroma(num) {
+            var url = 'https://valorant-api.com/v1/weapons/' + weaponSelected + lenguage;
+            document.querySelector('.gooey').style.display = "block";
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            console.log(weaponskin);
+            document.getElementById('notvideo').src = miRespuesta.data.skins[weaponskin].chromas[num].displayIcon;
+            const video = document.getElementById("video");
+            video.pause();
+            video.style.display = "none";
+            document.getElementById('notvideo').style.display = "block";
+            document.querySelector('.gooey').style.display = "none";
+            document.getElementById('first-text').innerText = miRespuesta.data.skins[weaponskin].chromas[num].displayName;
+        
+        }
 
         async function weaponVideo(num) {
             console.log(weaponSelected);
@@ -212,6 +256,7 @@
                 return response.json();
             });
             document.querySelector('.gooey').style.display = "none";
+            weaponskin = num;
             var my_array = miRespuesta.data.skins[num].levels;
             var last_element = my_array[my_array.length - 1];
             console.log(last_element.streamedVideo);
@@ -223,13 +268,13 @@
                 document.getElementById('notvideo').style.display = "block";
 
             } else {
-                document.getElementById('video').src = last_element.streamedVideo;
+                document.getElementById('video').src = my_array[0].streamedVideo;
                 const video = document.getElementById("video");
                 video.play();
                 video.style.display = "block";
                 document.getElementById('notvideo').style.display = "none";
             }
-            document.getElementById('first-text').innerText = last_element.displayName;
+            document.getElementById('first-text').innerText = my_array[0].displayName;
             printWeaponLevels(miRespuesta.data.skins[num].levels);
             printWeaponChromas(miRespuesta.data.skins[num].chromas);
         }
@@ -286,7 +331,7 @@
         function printWeaponLevels(levels){
             var level ="";
             levels.forEach(function (element, i) {
-                level += '<div class="icon-box gb a">'+ levels[i].displayName +'</div>';
+                level += '<div class="icon-box gb a" onclick="weaponlevel('+ i +')">'+ levels[i].displayName +'</div>';
             });
             document.getElementById('weaponlevels').innerHTML = level;
         }
@@ -295,7 +340,7 @@
         function printWeaponChromas(chromas){
             var chroma ="";
             chromas.forEach(function (element, i) {
-                chroma += '<div><img class="colores" src="'+ chromas[i].swatch +'"></div>';
+                chroma += '<div><img class="colores" onclick="weaponchroma('+ i +')" src="'+ chromas[i].swatch +'"></div>';
             });
             document.getElementById('weaponchromas').innerHTML = chroma;
 
