@@ -164,7 +164,6 @@
                             
                         </div>
                         <div class="bottom-container" id="weaponchromas">
-                            <div class="colores">Color1</div>
                         </div>
                         <div class="sub-menu-holder" id="sub-menu-holder"></div>
                     </div>
@@ -274,9 +273,11 @@
                 video.style.display = "block";
                 document.getElementById('notvideo').style.display = "none";
             }
+            
             document.getElementById('first-text').innerText = my_array[0].displayName;
             printWeaponLevels(miRespuesta.data.skins[num].levels);
             printWeaponChromas(miRespuesta.data.skins[num].chromas);
+            document.getElementById('level0');
         }
 
         async function weaponInfo(num) {
@@ -331,7 +332,7 @@
         function printWeaponLevels(levels){
             var level ="";
             levels.forEach(function (element, i) {
-                level += '<div class="icon-box gb a" onclick="weaponlevel('+ i +')">'+ levels[i].displayName +'</div>';
+                level += '<div class="icon-box gb a hover-underline-animation" id="level'+ i +'" onclick="weaponlevel('+ i +')">'+ levels[i].displayName +'</div>';
             });
             document.getElementById('weaponlevels').innerHTML = level;
         }

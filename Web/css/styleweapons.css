@@ -571,6 +571,7 @@ section .navigation li:hover>img {
 
 
 .meganav {
+    font-family: Tungsten-Bold, arial, georgia, sans-serif;
     width: 37.5em;
     display: flex;
     transform-style: preserve-3d;
@@ -670,9 +671,10 @@ section .navigation li:hover>img {
 }
 
 .menu-item .sub-menu {
-  background: white;
+    border: 1px solid black;
+    background: white;
     position: absolute;
-    top: 7em;
+    top: 6.9em;
     color: rgba(0,0,0,0.5);
     border-radius: 10px;
     min-width: 27.5em;
@@ -713,7 +715,7 @@ section .navigation li:hover>img {
     pointer-events: none;
     bottom: -5em;
     left: calc(50% - 10px);
-    border-color: transparent transparent white transparent;
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
     border-width: 10px;
     border-style: solid;
 }
@@ -754,7 +756,7 @@ section .navigation li:hover>img {
     position: relative;
 }
 .menu-item .icon-box.space {
-    margin-bottom: 1.25em;
+    margin-bottom: 0em;
 }
 .menu-item .icon-box.flat {height: 1.5em;margin-bottom: 0.5em;}
 .menu-item .icon, .menu-item .text {
@@ -774,7 +776,7 @@ section .navigation li:hover>img {
     float: left;
     width: 100%;
     margin: 0;
-    height: 4em;
+    height: 2em;
     row-gap: 0;
     line-height: 1em;
 }
@@ -786,21 +788,6 @@ section .navigation li:hover>img {
     top: -1px;
 }
 
-/* Base Icon Style */
-.icon-box.gb .icon i:before {
-    background: linear-gradient(45deg, #0c86ef, #0cef9b);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    padding-left: 1px;
-}
-
-/* Define Icon Colors */
-.icon-box.gb.a .icon i:before {background-image: linear-gradient(45deg, #2ca7ff 35%, #31d078 75%);}
-.icon-box.gb.b .icon i:before {background-image: linear-gradient(45deg, #f32b2b 35%, #efbe0c 75%);}
-.icon-box.gb.c .icon i:before {background-image: linear-gradient(45deg, #7176ff 35%, #b26cea 75%);}
-.icon-box.gb.d .icon i:before {background-image: linear-gradient(45deg, #79c76f 35%, #bed09b 75%);}
-.icon-box.gb.e .icon i:before {background-image: linear-gradient(45deg, #6082ff 35%, #ff5dbe 75%);}
-.icon-box.gb.f .icon i:before {background-image: linear-gradient(45deg, #808080 35%, #bbbbbb 75%);}
 
 .menu-item .icon-box:hover .text i {
     clip-path: inset(0 0 0 0);
@@ -825,6 +812,8 @@ section .navigation li:hover>img {
     height: 7.5em;
 }
 .bottom-container {
+    margin-right: 3em;
+    padding-left: 1em;
     display:flex;
     justify-content: space-between;
     grid-area: 4 / -3 / 4 / 3;
@@ -912,7 +901,41 @@ section .navigation li:hover>img {
 }
 .colores{
     width: 50px;
+    transition: all 0.1s ease-in-out;
+}
+
+.colores:hover{
+    width: 50px;
+    transform: scale(1.2);
 }
 #weaponlevels{
     display: contents;
 }
+
+/*Animacion subrallado*/
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #9ea9af;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4655;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  
