@@ -908,14 +908,16 @@ button {
 #agent-name {
     position: fixed;
     margin: 0;
-    font-size: 13vw;
+    top: 0;
+    font-size: 11vw;
     color: gray;
     font-family: Tungsten-Bold,arial,georgia,sans-serif;
     text-transform:uppercase;
 }
 
 #description {
-    top: 300px;
+    font-size: medium;
+    top: 220px;
     position: fixed;
     color: black;
     width: 40%;
@@ -925,16 +927,21 @@ button {
 #abilities {
     position: fixed;
     margin: 0;
-    top: 500px;
+    top: 360px;
 }
 
 #ab-title{
- color: gray;
+    display: block;
+    margin-top: 0;
+    color: gray;
 }
 
 #ab-description{
-    color: black;
-    width: 85%;
+    font-size: small;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .agentfirst{
@@ -955,3 +962,53 @@ button {
 
 }
 
+/*TOOLTIP TEXT*/
+.tooltip {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border: solid black 2px;
+    visibility: hidden;
+    width: 400px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1000;
+    top: -50px;
+    left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+
+    z-index: 1000;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .videoabilities{
+      box-shadow: 10px 10px gray;
+      position: absolute;
+      right: 2%;
+      bottom: 2%;
+      width: 550px;
+      z-index: 1;
+
+      overflow: hidden;
+  }

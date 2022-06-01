@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/x-icon" href="https://static.playoverwatch.com/img/favicon-696bc07714.ico">
+    <link rel="icon" type="image/x-icon" href="https://playvalorant.com//static/favicon.3790df8e.ico">
     <title>Agentes - Valorant</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
         content="Overwatch es un electrizante shooter por equipos ambientado en la Tierra en un futuro próximo. Cada encuentro es una intensa batalla de 6 contra 6 entre un elenco de héroes únicos, cada uno con poderes y habilidades increíbles. Enfréntate en más de 20 mapas ambientados en diferentes partes del mundo y cambia de héroe sobre la marcha para adaptarte a la situación del combate en ese momento.">
     <meta itemprop="description"
         content="Overwatch es un electrizante shooter por equipos ambientado en la Tierra en un futuro próximo. Cada encuentro es una intensa batalla de 6 contra 6 entre un elenco de héroes únicos, cada uno con poderes y habilidades increíbles. Enfréntate en más de 20 mapas ambientados en diferentes partes del mundo y cambia de héroe sobre la marcha para adaptarte a la situación del combate en ese momento.">
-    <meta itemprop="image" content="https://static.playoverwatch.com/img/logos/overwatch-share-4dab210e88.jpg">
+   
 
 
    
@@ -247,14 +247,22 @@
                             
                         </div>
                         <div class="ab-description">
-                            <h2 id="ab-title">
+                            <div class="tooltip">
+                                <h2 id="ab-title">
 
-                            </h2>
-                            <h4 id="ab-description">
+                                </h2>
+                                <span class="tooltiptext">
+                                    <h4 id="ab-description">
 
-                            </h4>
-
+                                    </h4>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div>
+                        <video onloadedmetadata="this.muted=true" class="videoabilities" id="imgvideo" poster="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2f4463674f62877e/5ecad7ce722d20585b2f4a40/Brimstone_Q.jpg" controls mute autoplay loop>
+                            <source id="videoabilities" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte2b9eb1923ef64fa/5ecad7d0f5bd13348a6cac75/Brimstone_Q_v001_web.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -280,7 +288,7 @@
         }
         
         
-        
+    
     
     function agente(agentcode){
         agent = agentcode
@@ -339,7 +347,7 @@
             var abilities = '';
 
         ability.forEach(function(element, i){
-            abilities+='<button class="btnFilter "  onclick="Ability('+i+')"><span class="btn__inner" id="ability'+i+'"><span class="btn__slide"></span><span class="btn__content"><img class="icon" id="Ability1" src="' + element.displayIcon + '"></span></span></button>';
+            abilities+='<button class="btnFilter "  onclick="Ability('+i+'); getVideoAbility('+ i +')"><span class="btn__inner" id="ability'+i+'"><span class="btn__slide"></span><span class="btn__content"><img class="icon" id="Ability1" src="' + element.displayIcon + '"></span></span></button>';
         });
         document.getElementById('ab-icons').innerHTML = abilities;
         }
@@ -376,6 +384,26 @@
         etiquetaAudio.play()
     }
 
+    /*SCRIPT PARA VIDEOS DE AGENTES*/
+    var anumber;
+    function agentnumber(num){
+        anumber = num;
+    }
+    async function getVideoAbility(abilityNum) {
+	    var url = 'https://playvalorant.com/page-data/en-us/agents/page-data.json';
+  
+        var miRespuesta = await fetch(url,
+    {
+  	    method: 'GET',
+          mode: 'no-cors'
+        
+    }
+        ).then(function(response){
+        return response.json();
+        });
+        document.getElementById('imgvideo').setAttribute('poster', miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].static_image.url);
+        document.getElementById('videoabilities').src = miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].video.file.url;
+    }
     </script>
    
        <!--ORDENAR AGENTES-->
