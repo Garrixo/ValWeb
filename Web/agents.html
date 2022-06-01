@@ -395,8 +395,10 @@
         var miRespuesta = await fetch(url,
     {
   	    method: 'GET',
-          mode: 'no-cors'
-        
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json'
+            },
     }
         ).then(function(response){
         return response.json();
