@@ -94,6 +94,7 @@ a {
     font-size: 150px;
     position: absolute;
     position: inherit;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.289);
 }
 
 .title {
@@ -324,7 +325,7 @@ nav {
 .agents {
     background-color:
         /*#1d2331*/
-        #171153;
+        #210000;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
