@@ -342,7 +342,7 @@ nav {
 
 .Mapas {
     background-image: url("https://sm.ign.com/ign_in/screenshot/default/breeze-screenshot-map-02_f2yc.jpg");
-    height: 850px;
+    height: 750px;
     background-size: cover;
 
 
@@ -353,10 +353,6 @@ nav {
     height: 550px;
     background-size: cover;
     background-position: center center;
-}
-
-.about {
-    height: 550px;
 }
 
 .coloc {
