@@ -130,7 +130,7 @@ function Validate() {
   }
 }
 
-function redirect() {
+function redirect(pagina) {
  
-  window.location.href ='./agents.html';
+  window.location.href = pagina;
 }
