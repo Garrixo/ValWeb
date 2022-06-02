@@ -281,7 +281,7 @@ nav {
     cursor: pointer;
 }
 
-.sidebar {
+.sidebar-mainpage {
     background-color: #ff4763;
     position: absolute;
     z-index: 999;
@@ -295,7 +295,7 @@ nav {
     list-style: none;
 }
 
-.sidebar.open {
+.sidebar-mainpage.open {
     left: 0px;
 
 }
@@ -355,7 +355,17 @@ nav {
     background-size: cover;
     background-position: center center;
 }
-
+.carousel-maps{
+    width: 750px;
+    margin-top: 170px;
+    background-color: #8393e4f7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.maps-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .coloc {
     float: left;
 }
@@ -435,7 +445,7 @@ svg {
         filter: opacity(0.5) drop-shadow(0 0 0 #beb269);
     }
 
-    .menu {
+    .menu-mainpage {
         display: block;
         float: right;
         color: rgb(255, 255, 255);

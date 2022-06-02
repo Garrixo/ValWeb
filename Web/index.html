@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/scripts.js"></script>
 </head>
@@ -27,10 +29,10 @@
     <div class="fotofondo">
         <header>
             <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
-            <div class="menu">
+            <div class="menu-mainpage">
                 MENU
             </div>
-            <div class="sidebar">
+            <div class="sidebar-mainpage">
                 Lista:
 
                 <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
@@ -146,27 +148,70 @@
                 </button>
             </div>
         </div>
+
     </div>
     <div class="section Mapas">
-        <div class="text-maps">
-            <h1 class="titulo coloc">Mapas</h1>
-            <div class="subtitlesct">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat.
+        <div class="maps-container">
+            <div class="text-maps">
+                <h1 class="titulo coloc">Mapas</h1>
+                <div class="subtitlesct">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </div>
+                <div class="boton" onclick="redirect('./maps.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Ver Mapas</span>
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="boton" onclick="redirect('./maps.html')">
-                <button class="btn btn--light">
-                    <span class="btn__inner">
-                        <span class="btn__slide"></span>
-                        <span class="btn__content">Ver Mapas</span>
-                    </span>
-                </button>
+            <div class="carousel-maps" >
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images-ext-2.discordapp.net/external/mMh7J_NMzDuGmdTFTVzcWRQCpW7YuPIYOgX9WnnFrXg/https/images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb03d2e4867f2e324/607f995892f0063e5c0711bd/breeze-featured_v1.png?width=968&height=543"
+                                class="d-block w-100" alt="banner 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf4485163c8c5873c/6131b23e9db95e7ff74b6393/Valorant_FRACTURE_Minimap_Alpha_web.png" class="d-block w-100" alt="banner 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltde02911a015d7ef9/5f80d2851f5f6d4173b4e49d/Icebox_transparentbg_for_Web.png" class="d-block w-100" alt="banner 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8538036a309525ae/5ebc470bfd85ad7411ce6b50/bind-featured.png" class="d-block w-100" alt="banner 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8afb5b8145f5e9b2/5ebc46f7b8c49976b71c0bc5/haven-featured.png" class="d-block w-100" alt="banner 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd188c023f88f7d91/5ebc46db20f7727335261fcd/split-featured.png" class="d-block w-100" alt="banner 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta9b912e1a1b59aa4/5ebc471cfa550001f72bcb13/ascent-featured.png" class="d-block w-100" alt="banner 7">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <div class="section Clipeo">
         Enviar clips Fondo Difuminado carrusel de videos
         <h1>Clipeos</h1>
@@ -225,6 +270,12 @@
     <div class="section footer ">
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
