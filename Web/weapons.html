@@ -175,8 +175,8 @@
                 <source id="video-link" src="" type="video/mp4">
             </video>
             <img class="img-skin" id="notvideo" src="">
-            <div class="parent">
-                <div class="scroll">
+            <div class="parent" id="parent">
+                <div class="scroll" id="scroll">
                     <ul class="navigation" id="video-list">
 
                     </ul>
@@ -278,6 +278,10 @@
             printWeaponLevels(miRespuesta.data.skins[num].levels);
             printWeaponChromas(miRespuesta.data.skins[num].chromas);
             document.getElementById('level0');
+            document.getElementById('skin'+num).style.background = "#ff4655";
+            document.getElementById('skin'+num).style.opacity = 1;
+            document.getElementById('skinimg'+num).style.width = "230px";
+            document.getElementById('scroll').style.transform = " translateX("+-22.5*num+"%)"
         }
 
         async function weaponInfo(num) {
@@ -351,7 +355,7 @@
             var side = '';
 
             sidebar.forEach(function (element, i) {
-                side += '<li onclick="weaponVideo(' + i + ')"><img src="' + element.displayIcon + '"></li>';
+                side += '<li id="skin'+ i +'" onclick="weaponVideo(' + i + ')"><img id="skinimg'+i+'" src="' + element.displayIcon + '"></li>';
             });
             document.getElementById('video-list').innerHTML = side;
         }
