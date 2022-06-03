@@ -161,7 +161,7 @@ h2 {
     font-family: 'VALORANT', sans-serif;
 }
 
-nav {
+.navtop {
     padding-top: 25px;
     margin-right: 40px;
     float: right;
@@ -366,19 +366,30 @@ nav {
 
 .Clipeo {
     background-image: url("https://assets-prd.ignimgs.com/2020/03/02/reveal-canopy-valorant-1583129902400.jpg");
-    height: 550px;
+    height: 650px;
     background-size: cover;
     background-position: center center;
 }
 .carousel-maps{
+    margin-left: 20%;
     width: 750px;
     margin-top: 170px;
+    
+}
+.carousel{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.carouseltamaño{
+    width: 650px;
+    padding: 20px;
 }
 .maps-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    
 }
 .coloc {
     float: left;
@@ -719,6 +730,7 @@ svg {
 
 .btn__content {
     position: relative;
+    color: white;
 }
 
 .btn:hover {
