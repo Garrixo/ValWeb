@@ -61,7 +61,7 @@
                     </li>
                     <li>
                         <div class="language-selec">
-                            <select id="language" onchange="selector()">
+                            <select id="language" onchange="languageSelector()">
                                 <option value="/?language=es-ES">Spanish</option>
                 
                                 <option value="/?language=en-US">English</option>
@@ -111,22 +111,23 @@
     </div>
     
 
-        <form class="form-maps" onchange="mapShow()">
+        <form class="form-maps">
 
-			<input class="input-maps" type="radio" name="fancy" autofocus value="fracture" id="fracture" />
-			<input class="input-maps" type="radio" name="fancy" value="breeze" id="breeze" />
-			<input class="input-maps" type="radio" name="fancy" value="icebox" id="icebox" />
-			<input class="input-maps" type="radio" name="fancy" value="bind" id="bind" />
-            <input class="input-maps" type="radio" name="fancy" value="heaven" id="heaven" />	
-            <input class="input-maps" type="radio" name="fancy" value="split" id="split" />	
-            <input class="input-maps" type="radio" name="fancy" value="ascent" id="ascent" />				
-			<label class="label-maps" id="fracture" for="fracture">FRACTURE</label>
-            <label class="label-maps" id="breeze" for="breeze">BREEZE</label>
-            <label class="label-maps" id="icebox" for="icebox">ICEBOX</label>
-            <label class="label-maps" id="bind" for="bind">BIND</label>
-            <label class="label-maps" id="heaven" for="heaven">HEAVEN</label>
-            <label class="label-maps" id="split" for="split">SPLIT</label>
-            <label class="label-maps" id="ascent" for="ascent">ASCENT</label>
+			<input class="input-maps" type="radio" name="fancy" onclick="mapShow('b529448b-4d60-346e-e89e-00a4c527a405')" autofocus value="fracture" id="fracture" />
+			<input class="input-maps" type="radio" name="fancy" onclick="mapShow('2fb9a4fd-47b8-4e7d-a969-74b4046ebd53')" value="breeze" id="breeze" />
+			<input class="input-maps" type="radio" name="fancy" onclick="mapShow('e2ad5c54-4114-a870-9641-8ea21279579a')" value="icebox" id="icebox" />
+			<input class="input-maps" type="radio" name="fancy" onclick="mapShow('2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba')" value="bind" id="bind" />
+            <input class="input-maps" type="radio" name="fancy" onclick="mapShow('2bee0dc9-4ffe-519b-1cbd-7fbe763a6047')" value="heaven" id="heaven" />	
+            <input class="input-maps" type="radio" name="fancy" onclick="mapShow('d960549e-485c-e861-8d71-aa9d1aed12a2')" value="split" id="split" />	
+            <input class="input-maps" type="radio" name="fancy" onclick="mapShow('7eaecc1b-4337-bbf6-6ab9-04b8f06b3319')" value="ascent" id="ascent" />				
+			<label class="label-maps" id="fracture" for="fracture">&nbsp;</label>
+            <label class="label-maps" id="breeze" for="breeze">&nbsp;</label>
+            <label class="label-maps" id="icebox" for="icebox">&nbsp;</label>
+            <label class="label-maps" id="bind" for="bind">&nbsp;</label>
+            <label class="label-maps" id="heaven" for="heaven">&nbsp;</label>
+            <label class="label-maps" id="split" for="split">&nbsp;</label>
+            <label class="label-maps" id="ascent" for="ascent">&nbsp;</label>
+            <div class="mapName" id="mapName">FRACTURE</div>
 
 	</form>
 
@@ -138,15 +139,19 @@
     </div>
 
     <script>
+        
          var lenguage = '/?language=es-ES';
+         var selected = 'b529448b-4d60-346e-e89e-00a4c527a405';
+         mapShow(selected);
 
          function languageSelector() {
             var select = document.getElementById('language');
             lenguage = select.options[select.selectedIndex].value;
-            getDataFromApi();
+            mapShow(selected);
         }
 
         async function mapShow(mapselected) {
+            selected = mapselected;
             var url = 'https://valorant-api.com/v1/maps/' + mapselected + lenguage;
             var miRespuesta = await fetch(url,
                 {
@@ -156,7 +161,7 @@
             ).then(function (response) {
                 return response.json();
             });
-            
+            document.getElementById('mapName').innerText = miRespuesta.data.displayName;
         
         }
 
