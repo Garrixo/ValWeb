@@ -59,6 +59,47 @@
                     <li class="case">
                         <a href="./weapons.html">Armas</a>
                     </li>
+                    <li>
+                        <div class="language-selec">
+                            <select id="language" onchange="selector()">
+                                <option value="/?language=es-ES">Spanish</option>
+                
+                                <option value="/?language=en-US">English</option>
+                
+                                <option value="/?language=es-MX">Spanish(LATAM)</option>
+                
+                                <option value="/?language=fr-FR">French</option>
+                
+                                <option value="/?language=de-DE">Alemán</option>
+                
+                                <option value="/?language=ja-JP">Japones</option>
+                
+                                <option value="/?language=ko-KR">Koreano</option>
+                
+                                <option value="/?language=ar-AE">Arabic</option>
+                
+                                <option value="/?language=id-ID">Indonesian</option>
+                
+                                <option value="/?language=it-IT">Italian</option>
+                
+                                <option value="/?language=pt-BR">Portuguese (BR)</option>
+                
+                                <option value="/?language=pl-PL">Polish</option>
+                
+                                <option value="/?language=ru-RU">Russian</option>
+                
+                                <option value="/?language=th-TH">Thai</option>
+                
+                                <option value="/?language=tr-TR">Turkish</option>
+                
+                                <option value="/?language=vi-VN">Vietnamese</option>
+                
+                                <option value="/?language=zh-CN">Chinese(Simplified)</option>
+                
+                                <option value="/?language=zh-TW">Chinese</option>
+                            </select>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div class="uptitle">
@@ -70,7 +111,7 @@
     </div>
     
 
-        <form class="form-maps">
+        <form class="form-maps" onchange="mapShow()">
 
 			<input class="input-maps" type="radio" name="fancy" autofocus value="fracture" id="fracture" />
 			<input class="input-maps" type="radio" name="fancy" value="breeze" id="breeze" />
@@ -92,5 +133,32 @@
     
     <div class="mapsect mapsectdown">
 
+
+
     </div>
+
+    <script>
+         var lenguage = '/?language=es-ES';
+
+         function languageSelector() {
+            var select = document.getElementById('language');
+            lenguage = select.options[select.selectedIndex].value;
+            getDataFromApi();
+        }
+
+        async function mapShow(mapselected) {
+            var url = 'https://valorant-api.com/v1/maps/' + mapselected + lenguage;
+            var miRespuesta = await fetch(url,
+                {
+                    method: 'GET',
+
+                }
+            ).then(function (response) {
+                return response.json();
+            });
+            
+        
+        }
+
+    </script>
 </body>
