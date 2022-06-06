@@ -402,6 +402,7 @@ h2 {
 .clips {
     float: right;
     padding: 50px;
+    margin-top: 55px;
 }
 
 .arrow-up {
