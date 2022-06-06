@@ -39,19 +39,53 @@
     </button> -->
     <div class="fotofondo">
         <header class="header-index">
-            <img onclick="openSidebar()" class="mline" src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
+            <img onclick="openSidebar()" class="mline"
+                src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
             <div class="sidebar-mainpage">
-                
-                <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
-                        src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
-                </button>
-                <ul class="sidebar-ul">
-                    <li>weapons</li>
-                    <li>What We Do</li>
-                    <li>Team</li>
-                    <li>Insights</li>
-                </ul>
+                <div class="header-sidebar-index">
+                    <div class="titulo-sidebar-index title-header">Valorant</div>
+
+                    <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
+                            src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
+                            class="cross-closing">
+                    </button>
+                </div>
+                <div class="body-sidebar-index">
+                    <div class="boton" onclick="redirect('./index.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Home</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="boton" onclick="redirect('./agents.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Agentes</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="boton" onclick="redirect('./weapons.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Armas</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="boton" onclick="redirect('./maps.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Mapas</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <nav class="navtop">
                 <ul class="ul-header">

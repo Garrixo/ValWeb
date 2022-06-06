@@ -321,7 +321,7 @@ li {
 }
 
 .sidebar-mainpage {
-    background-color: #ff4763;
+    background-color: #263238;
     position: absolute;
     z-index: 999;
     top: 0;
@@ -332,12 +332,25 @@ li {
     border-left: solid;
     color: black;
 }
-
+.body-sidebar-index{
+    margin-top: 100px;
+    margin-left: 10%;
+}
+.titulo-sidebar-index{
+    font-size: 40px;
+    color:white;
+    padding-top: 5%;
+    margin-left: 10%;
+    width: 50px;
+}
 .sidebar-mainpage.open {
     left: 0px;
 
 }
-
+.header-sidebar-index{
+    display: flex;
+    justify-content: space-between;
+}
 .container {
     position: relative;
 }
@@ -1006,7 +1019,6 @@ li {
 }
 
 .footer {
-    background-color: #0f1923;
     width: 100%;
     background-color: #263238;
     min-height: 250px;
