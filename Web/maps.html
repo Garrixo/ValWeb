@@ -13,21 +13,67 @@
 
     <div>
         <header class="header-index">
-            <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
+            <img onclick="openSidebar()" class="mline"
+                src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
+
+            <div class="sidebar-mainpage">
+                <div class="header-sidebar-index">
+                    <div class="titulo-sidebar-index title-header">Valorant</div>
+
+                    <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
+                            src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
+                            class="cross-closing">
+                    </button>
+                </div>
+                <div class="body-sidebar-index">
+                    <div class="boton" onclick="redirect('./index.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Home</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="boton" onclick="redirect('./agents.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Agentes</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="boton" onclick="redirect('./weapons.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Armas</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="boton" onclick="redirect('./maps.html')">
+                        <button class="btn btn--light">
+                            <span class="btn__inner">
+                                <span class="btn__slide"></span>
+                                <span class="btn__content">Ir Mapas</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <nav class="navtop">
                 <ul class="ul-header">
-
                     <li class="case">
-                        <a class="header-a" href="./index.html">Home</a>
+                        <a class="header-a">Home</a>
                     </li>
                     <li class="case">
                         <a class="header-a" href="./agents.html">Agentes</a>
                     </li>
                     <li class="case">
-                        <a class="header-a" href="#"">Mapas</a>
+                        <a class="header-a" href="./maps.html">Mapas</a>
                     </li>
-                    <li class=" case">
-                            <a class="header-a" href="./weapons.html">Armas</a>
+                    <li class="case">
+                        <a class="header-a" href="./weapons.html">Armas</a>
                     </li>
                     <li class="case">
                         <select id="language" class="language-selec" onchange="languageSelector()">
@@ -71,7 +117,7 @@
                 </ul>
             </nav>
             <div class="uptitle">
-                <h2>
+                <h2 class="title-header">
                     vAlorant
                 </h2>
             </div>
