@@ -65,6 +65,21 @@ function openDropdown() {
   }
 }
 /*-----------------------------------------*/
+/*---------------MODAL CUTRE----------------*/
+/*-----------------------------------------*/
+
+function hideModal() {
+  const modal = document.querySelector('#myDiv');
+  modal.classList.remove('show');
+
+}
+function showModal() {
+  const modal = document.querySelector('#myDiv');
+  modal.classList.add('show');
+}
+
+
+/*-----------------------------------------*/
 /*---Arbri cosa---*/
 /*-----------------------------------------*/
 function openSidebar() {
@@ -99,14 +114,7 @@ function _scrollTop() {
   });
 }
 
-function hideModal() {
-  const modal = document.querySelector('#myDiv');
-  modal.classList.remove('show');
-}
-function showModal() {
-  const modal = document.querySelector('#myDiv');
-  modal.classList.add('show');
-}
+
 /*-----------------------------------------*/
 /*---Validad fORMULARUI---*/
 /*-----------------------------------------*/
@@ -131,6 +139,6 @@ function Validate() {
 }
 
 function redirect(pagina) {
- 
+
   window.location.href = pagina;
 }

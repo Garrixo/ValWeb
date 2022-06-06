@@ -2,6 +2,7 @@
 <html>
 
 <head>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styleweapons.css">
     <style>
@@ -63,7 +64,7 @@
         </nav>
         <div class="uptitle">
             <h2>
-                vAlorant esp
+                vAlorant
             </h2>
         </div>
     </header>
@@ -161,7 +162,7 @@
                     </div>
                     <div class="sub-menu double">
                         <div id="weaponlevels">
-                            
+
                         </div>
                         <div class="bottom-container" id="weaponchromas">
                         </div>
@@ -183,14 +184,99 @@
                 </div>
             </div>
         </section>
-        
+
     </div>
+    <footer class=" section footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                    <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+                    <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="#">Image Rectoucing</a></li>
+                        <li><a href="#">Clipping Path</a></li>
+                        <li><a href="#">Hollow Man Montage</a></li>
+                        <li><a href="#">Ebay & Amazon</a></li>
+                        <li><a href="#">Hair Masking/Clipping</a></li>
+                        <li><a href="#">Image Cropping</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./weapons.html">Armas</a></li>
+                        <li><a href="./maps.html">Mapas</a></li>
+                        <li><a href="./agents.html">Agentes</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                    <!--headin5_amrc ends here-->
+
+                    <ul class="footer_ul2_amrc">
+                        <li><a href="https://twitter.com/hoodieguille"><i
+                                    class="fab fa-twitter fleft padding-right"></i>
+                                Guillermo Vallejo Lopez
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/_garrixo_"><i class="fab fa-twitter fleft padding-right"></i>
+
+                                Martin Cardona de Miguel
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/2Dogedrake"><i class="fab fa-twitter fleft padding-right"></i>
+
+                                Luis Rodriguez Gonzalez
+                            </a>
+                        </li>
+                    </ul>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2017 | Designed With by <a href="#">ValorantESP</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
     <script>
         $('video').on('loadstart', function (event) {
-                $('gooey').css('display','block');
+            $('gooey').css('display', 'block');
         });
         $('video').on('canplay', function (event) {
-                $('gooey').css('display','none');
+            $('gooey').css('display', 'none');
         });
     </script>
     <script>
@@ -217,7 +303,7 @@
             document.getElementById('notvideo').style.display = "none";
             document.querySelector('.gooey').style.display = "none";
             document.getElementById('first-text').innerText = miRespuesta.data.skins[weaponskin].levels[num].displayName;
-        
+
         }
 
         async function weaponchroma(num) {
@@ -239,7 +325,7 @@
             document.getElementById('notvideo').style.display = "block";
             document.querySelector('.gooey').style.display = "none";
             document.getElementById('first-text').innerText = miRespuesta.data.skins[weaponskin].chromas[num].displayName;
-        
+
         }
 
         async function weaponVideo(num) {
@@ -273,15 +359,15 @@
                 video.style.display = "block";
                 document.getElementById('notvideo').style.display = "none";
             }
-            
+
             document.getElementById('first-text').innerText = my_array[0].displayName;
             printWeaponLevels(miRespuesta.data.skins[num].levels);
             printWeaponChromas(miRespuesta.data.skins[num].chromas);
             document.getElementById('level0');
-            document.getElementById('skin'+num).style.background = "#ff4655";
-            document.getElementById('skin'+num).style.opacity = 1;
-            document.getElementById('skinimg'+num).style.width = "230px";
-            document.getElementById('scroll').style.transform = " translateX("+-22.5*num+"%)"
+            document.getElementById('skin' + num).style.background = "#ff4655";
+            document.getElementById('skin' + num).style.opacity = 1;
+            document.getElementById('skinimg' + num).style.width = "230px";
+            document.getElementById('scroll').style.transform = " translateX(" + -22.5 * num + "%)"
         }
 
         async function weaponInfo(num) {
@@ -333,29 +419,29 @@
         }
 
         /*SKIN LEVELS GENERATOR*/
-        function printWeaponLevels(levels){
-            var level ="";
+        function printWeaponLevels(levels) {
+            var level = "";
             levels.forEach(function (element, i) {
-                level += '<div class="icon-box gb a hover-underline-animation" id="level'+ i +'" onclick="weaponlevel('+ i +')">'+ levels[i].displayName +'</div>';
+                level += '<div class="icon-box gb a hover-underline-animation" id="level' + i + '" onclick="weaponlevel(' + i + ')">' + levels[i].displayName + '</div>';
             });
             document.getElementById('weaponlevels').innerHTML = level;
         }
 
         /*SKIN CHROMAS GENERATOR*/
-        function printWeaponChromas(chromas){
-            var chroma ="";
+        function printWeaponChromas(chromas) {
+            var chroma = "";
             chromas.forEach(function (element, i) {
-                chroma += '<div><img class="colores" onclick="weaponchroma('+ i +')" src="'+ chromas[i].swatch +'"></div>';
+                chroma += '<div><img class="colores" onclick="weaponchroma(' + i + ')" src="' + chromas[i].swatch + '"></div>';
             });
             document.getElementById('weaponchromas').innerHTML = chroma;
 
         }
-         /*WEAPON SIDEBAR SKIN GENERATOR*/
+        /*WEAPON SIDEBAR SKIN GENERATOR*/
         function printSidebar(sidebar) {
             var side = '';
 
             sidebar.forEach(function (element, i) {
-                side += '<li id="skin'+ i +'" onclick="weaponVideo(' + i + ')"><img id="skinimg'+i+'" src="' + element.displayIcon + '"></li>';
+                side += '<li id="skin' + i + '" onclick="weaponVideo(' + i + ')"><img id="skinimg' + i + '" src="' + element.displayIcon + '"></li>';
             });
             document.getElementById('video-list').innerHTML = side;
         }
@@ -399,6 +485,12 @@
         slider.addEventListener('mouseup', stopDragging, false);
         slider.addEventListener('mouseleave', stopDragging, false);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

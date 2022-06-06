@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/scripts.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
     <!-- Carousel locura-->
@@ -22,9 +22,9 @@
 <body class="overf">
     <button onclick="_scrollTop()" class="arrow-up">
         <?xml version="1.0" encoding="iso-8859-1"?>
-        <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 493.472 493.472" style="enable-background:new 0 0 493.472 493.472;"
-            xml:space="preserve">
+        <svg class="svg-arrow" version="1.1" width="40" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 493.472 493.472"
+            style="enable-background:new 0 0 493.472 493.472;" xml:space="preserve">
             <g>
                 <g>
                     <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74
@@ -38,8 +38,8 @@
 
     </button>
     <div class="fotofondo">
-        <header>
-            <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
+        <header class="header-index">
+            <!-- <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
             <div class="menu-mainpage">
                 MENU
             </div>
@@ -55,54 +55,45 @@
                     <li>Team</li>
                     <li>Insights</li>
                 </ul>
-            </div>
+            </div> -->
             <nav class="navtop">
-                <ul>
+                <ul class="ul-header">
                     <li class="case">
-                        <a>Home</a>
-                    </li>
-                    <!-- <li class="case">
-                        <div class="dropdown-container">
-                            <a onclick="openDropdown()"> Contenido <svg class="my-svg" version="1.1" width="10"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 199.404 199.404"
-                                    style="enable-background:new 0 0 199.404 199.404;" xml:space="preserve">
-                                    <g>
-                                        <polygon
-                                            points="199.404,63.993 171.12,35.709 99.702,107.127 28.284,35.709 0,63.993 99.702,163.695 	" />
-                                    </g>
-                                </svg></a>
-
-                            <div class="dropdown-content">
-                                <ul class="dropdown-menu">
-                                    <li><a href="./maps.html">MAPAS</a></li>
-                                    <li><a href="./weapons.html">ARMAS</a></li>
-                                    <li><a href="./agents.html">AGENTES</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li> -->
-                    <li class="case">
-                        <a href="./agents.html">Agentes</a>
+                        <a class="header-a">Home</a>
                     </li>
                     <li class="case">
-                        <a href="./maps.html">Mapas</a>
+                        <a class="header-a" href="./agents.html">Agentes</a>
                     </li>
                     <li class="case">
-                        <a href="./weapons.html">Armas</a>
+                        <a class="header-a" href="./maps.html">Mapas</a>
+                    </li>
+                    <li class="case">
+                        <a class="header-a" href="./weapons.html">Armas</a>
                     </li>
                 </ul>
             </nav>
             <div class="uptitle">
-                <h2>
+                <h2 class="title-header">
                     vAlorant
                 </h2>
             </div>
         </header>
+        <div class="modalindex" id="myDiv">
+            <div class="contenido">
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/Ey770ez6ROk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <button  class="buttonclose" onclick="hideModal()">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/Q0G2UVjVQ4_.png" /></button>
+            </div>
+        </div>
         <div class="linea"></div>
         <div class="textbox">
-            <div class="title">¿Que es Valorant?</div>
-            <div class="subtitle">
+            <div class="titulo">BIENVENIDO A VALORANT</div>
+            <div class="subtitlesct">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -110,9 +101,13 @@
                 ex
                 ea commodo consequat.
             </div>
-            <div class="ll"><a> Find out more </a> </div>
-            <div class="vid">
-                (LOL CAMBIAR Xd)
+            <div>
+                <button class="btn btn--light" onclick="showModal()">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content">Trailer</span>
+                    </span>
+                </button>
             </div>
         </div>
     </div>
@@ -251,9 +246,15 @@
                     <div class="carousel-inner">
                         <!-- Single item -->
                         <div class="carousel-item active">
-                            <video class="img-fluid" autoplay loop muted>
+                            <!-- <video class="img-fluid" autoplay loop muted>
                                 <source src="https://www.youtube.com/watch?v=lg076U2uskQ" type="video/mp4" />
-                            </video>
+                            </video> -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fAyUxeDzKlI?controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>
@@ -264,9 +265,14 @@
 
                         <!-- Single item -->
                         <div class="carousel-item">
-                            <video class="img-fluid" autoplay loop muted>
+                            <!-- <video class="img-fluid" autoplay loop muted>
                                 <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
-                            </video>
+                            </video> -->
+                            <iframe width="620" height="360" src="https://www.youtube.com/embed/c1VjTbzcEds?controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>
