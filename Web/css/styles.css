@@ -30,7 +30,9 @@
 li {
     font-family: 'Anton';
 }
-
+.sidebar-ul{
+    margin: 40px;
+}
 .overf {
     overflow-x: hidden;
     color: white;
@@ -63,6 +65,7 @@ li {
 .hide {
     display: none;
 }
+
 
 * {
 
@@ -176,16 +179,11 @@ li {
     width: 620px;
 }
 
-.izq {
-    display: flex;
-    justify-content: left;
-}
-
 .derech {
+    display: block;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    align-items: flex-start;
+    padding-left: 300px;
 }
 
 .imageag {
@@ -333,7 +331,6 @@ li {
     transition: .5s left;
     border-left: solid;
     color: black;
-    list-style: none;
 }
 
 .sidebar-mainpage.open {
@@ -450,6 +447,14 @@ li {
     margin-top: 55px;
 }
 
+.countainer_agents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
 .arrow-up {
     position: fixed;
     right: 20px;
@@ -472,31 +477,19 @@ li {
 
 }
 
-
-
 /* TBLET */
 /* TBLET */
 /* TBLET */
 /* TBLET */
-@media only screen and (max-width: 900px) {
-    .textbox {
-        padding-left: 10%;
-    }
 
-    .linea {
-        margin-left: 3%;
-    }
-
-    .uptitle {
-        text-overflow: ellipsis;
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .bbar {
         display: none;
         padding: 0px;
+    }
+
+    .imageag {
+        display: none;
     }
 
     nav {
@@ -510,25 +503,49 @@ li {
 
     .mline {
         display: block;
-        width: 30px;
-        height: 30px;
+        height: 56px;
         float: right;
-        padding: 20px;
-        color: #615c3b;
-        filter: opacity(0.5) drop-shadow(0 0 0 #beb269);
+        margin: 5px;
+    }
+
+    .subtitlesct {
+        font-size: 30px;
+        width: 600px;
     }
 
     .menu-mainpage {
-        display: block;
-        float: right;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        padding-top: 20px;
-        font-size: x-large
+        display: hidden;
+
+    }
+
+    .titulo {
+        font-size: 90px;
+
     }
 
     .subtitle {
         width: 400px;
+    }
+
+    .derech {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    .carousel-maps {
+        display: none;
+    }
+
+    .carouseltamaño {
+        display: none;
+    }
+
+    .clips {
+        padding-left: 100px;
+    }
+
+    .boo {
+        display: none;
     }
 }
 
@@ -540,15 +557,62 @@ li {
         display: none;
     }
 
+    .titulo {
+        font-size: 50px;
+
+    }
+
+    .subtitlesct {
+        font-size: 18px;
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    .fotofondo {
+        height: 500px;
+    }
+
     .textbox {
-        padding-left: 10px;
-        margin-top: 50px;
+        padding-left: 30px;
+        margin-top: 0px;
+    }
+
+    .boo {
+        display: none;
     }
 
     .title {
 
         font-size: 250%;
         color: white;
+    }
+
+    .derech {
+        padding-left: 30px;
+    }
+
+    .text-wepons {
+        margin-left: 30px;
+    }
+
+    .weapons {
+        height: 500px;
+    }
+
+    .Mapas {
+        height: 500px;
+    }
+
+    .text-maps {
+        margin-left: 30px;
+    }
+
+    .Clipeo {
+        height: 500px;
+    }
+
+    .clips {
+        padding: 15px;
     }
 
 }

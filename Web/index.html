@@ -20,7 +20,7 @@
 </head>
 
 <body class="overf">
-    <button onclick="_scrollTop()" class="arrow-up">
+    <!-- <button onclick="_scrollTop()" class="arrow-up">
         <?xml version="1.0" encoding="iso-8859-1"?>
         <svg class="svg-arrow" version="1.1" width="40" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 493.472 493.472"
@@ -36,26 +36,23 @@
             </g>
         </svg>
 
-    </button>
+    </button> -->
     <div class="fotofondo">
         <header class="header-index">
-            <!-- <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
-            <div class="menu-mainpage">
-                MENU
-            </div>
-            <div class="sidebar-mainpage">
-                Lista:
+            <img onclick="openSidebar()" class="mline" src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
+            <div class="sidebar-mainpage">
+                
                 <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
                         src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
                 </button>
-                <ul>
+                <ul class="sidebar-ul">
                     <li>weapons</li>
                     <li>What We Do</li>
                     <li>Team</li>
                     <li>Insights</li>
                 </ul>
-            </div> -->
+            </div>
             <nav class="navtop">
                 <ul class="ul-header">
                     <li class="case">
@@ -86,7 +83,7 @@
                     allowfullscreen></iframe>
             </div>
             <div>
-                <button  class="buttonclose" onclick="hideModal()">
+                <button class="buttonclose" onclick="hideModal()">
                     <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/Q0G2UVjVQ4_.png" /></button>
             </div>
         </div>
@@ -101,7 +98,7 @@
                 ex
                 ea commodo consequat.
             </div>
-            <div>
+            <div class="boo">
                 <button class="btn btn--light" onclick="showModal()">
                     <span class="btn__inner">
                         <span class="btn__slide"></span>
@@ -112,28 +109,31 @@
         </div>
     </div>
     <div class="section agents">
-        <div class="izq">
-            <image type="agentes" class="imageag"
-                src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png"></image>
-        </div>
-        <div class="derech">
-            <h1 class="titulo">AGENTES</h1>
-            <div class="subtitlesct">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat.
+        <div class="countainer_agents">
+            <div class="izq">
+                <image type="agentes" class="imageag"
+                    src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png"></image>
             </div>
-            <div class="boton" onclick="redirect('./agents.html')">
-                <button class="btn btn--light">
-                    <span class="btn__inner">
-                        <span class="btn__slide"></span>
-                        <span class="btn__content">Escoge tu favorito</span>
-                    </span>
-                </button>
+            <div class="derech">
+                <h1 class="titulo">AGENTES</h1>
+                <div class="subtitlesct">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </div>
+                <div class="boton" onclick="redirect('./agents.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Escoge tu favorito</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
-
     </div>
 
     <div class=" section weapons">
@@ -229,7 +229,7 @@
     <div class="section Clipeo">
         <div class="maps-container">
             <div class="carouseltamaño">
-                <h1 class="titulo">Clipeos</h1>
+                <h1 class="titulo">Clips</h1>
                 <!-- Carousel wrapper -->
                 <div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
                     <!-- Indicators -->

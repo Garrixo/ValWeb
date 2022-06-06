@@ -83,15 +83,15 @@ function showModal() {
 /*---Arbri cosa---*/
 /*-----------------------------------------*/
 function openSidebar() {
-  console.log('sidebar');
-  document.querySelector('.sidebar').classList.add('open');
+  console.log('sidebar-mainpage');
+  document.querySelector('.sidebar-mainpage').classList.add('open');
 }
 /*-----------------------------------------*/
 /*---cerrar cosa---*/
 /*-----------------------------------------*/
 function closeSidebar() {
-  console.log('sidebar');
-  document.querySelector('.sidebar').classList.remove('open');
+  console.log('sidebar-mainpage');
+  document.querySelector('.sidebar-mainpage').classList.remove('open');
 }
 /*-----------------------------------------*/
 /*---Fechita do merda---*/
