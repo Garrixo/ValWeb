@@ -237,6 +237,7 @@ li {
 .case:hover {
     margin: 0;
     box-shadow: inset 0 -5px 0 #ff4763;
+    color: #ff4763;
 }
 
 
