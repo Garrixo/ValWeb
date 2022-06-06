@@ -12,10 +12,10 @@
         content="Overwatch es un electrizante shooter por equipos ambientado en la Tierra en un futuro próximo. Cada encuentro es una intensa batalla de 6 contra 6 entre un elenco de héroes únicos, cada uno con poderes y habilidades increíbles. Enfréntate en más de 20 mapas ambientados en diferentes partes del mundo y cambia de héroe sobre la marcha para adaptarte a la situación del combate en ese momento.">
     <meta itemprop="description"
         content="Overwatch es un electrizante shooter por equipos ambientado en la Tierra en un futuro próximo. Cada encuentro es una intensa batalla de 6 contra 6 entre un elenco de héroes únicos, cada uno con poderes y habilidades increíbles. Enfréntate en más de 20 mapas ambientados en diferentes partes del mundo y cambia de héroe sobre la marcha para adaptarte a la situación del combate en ese momento.">
+   
 
 
-
-
+   
 
 
     <!--HOJAS DE ESTILO NECESARIAS-->
@@ -32,24 +32,24 @@
     </script>
     <script>
         function openSidebar() {
-            console.log('sidebar');
-            document.querySelector('.sidebar').classList.add('open');
-            document.getElementById('close').style.display = 'block';
-            document.getElementById('overflow').style.overflow = 'hidden';
+          console.log('sidebar');
+          document.querySelector('.sidebar').classList.add('open');
+          document.getElementById('close').style.display ='block';
+          document.getElementById('overflow').style.overflow = 'hidden';
         }
-
+      
         function closeSidebar() {
-            console.log('sidebar');
-            document.querySelector('.sidebar').classList.remove('open');
-            document.getElementById('close').style.display = 'none';
-            document.getElementById('overflow').style.overflow = 'visible';
+          console.log('sidebar');
+          document.querySelector('.sidebar').classList.remove('open');
+          document.getElementById('close').style.display = 'none';
+          document.getElementById('overflow').style.overflow = 'visible';
         }
-    </script>
+      </script>
 </head>
 
 <body class="heroes es-es" id="overflow" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-    <!-- <header>
-        <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
+    <header>
+        <!-- <img onclick="openSidebar()" class="mline" src="https://pic.onlinewebfonts.com/svg/img_153414.png">
         <div class="menu">
             MENU
         </div>
@@ -70,7 +70,7 @@
             <ul>
                 <li class="case">
                     <a>Home</a>
-                </li>
+                </li> -->
                 <!-- <li class="case">
                     <div class="dropdown-container">
                         <a onclick="openDropdown()"> Contenido <svg class="my-svg" version="1.1" width="10"
@@ -91,23 +91,23 @@
                         </div>
                     </div>
                 </li> -->
-    <!-- <li class="case">
-        <a href="./agents.html">Agentes</a>
-    </li>
-    <li class="case">
-        <a href="./maps.html">Mapas</a>
-    </li>
-    <li class="case">
-        <a href="./weapons.html">Armas</a>
-    </li>
-    </ul>
-    </nav>
-    <div class="uptitle">
-        <h2>
-            vAlorant
-        </h2>
-    </div> -->
-    <!-- </header> --> -->
+                <!-- <li class="case">
+                    <a href="./agents.html">Agentes</a>
+                </li>
+                <li class="case">
+                    <a href="./maps.html">Mapas</a>
+                </li>
+                <li class="case">
+                    <a href="./weapons.html">Armas</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="uptitle">
+            <h2>
+                vAlorant
+            </h2>
+        </div>-->
+    </header> 
     <section id="site">
         <section class="u-full-width-container heroes-selector">
             <div class="u-max-width-container content-box">
@@ -197,235 +197,46 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="" id="heroes-selector-container"
-                        style="position: relative; overflow: hidden; height: 1775.1px; transition: height 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;">
-                        <div class="hero-portrait-detailed-container" data-groups="[&quot;DUELISTA&quot;]"
-                            data-order="0"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar(); agente('add6443a-41bd-e414-f6ad-e58d267f4e95');"
-                                data-hero-id="jett" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png"><span
-                                    class="container post"><span class="icon">
-                                    </span><span class="portrait-title">Jett</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;DUELISTA&quot;]" data-order="20"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar(); agente('f94c3b30-42be-e959-889c-5aa313dba261');"
-                                data-hero-id="raze" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    <div class="" id="heroes-selector-container" style="position: relative; overflow: hidden; height: 1775.1px; transition: height 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;">
+                        <div class="hero-portrait-detailed-container" data-groups="[&quot;DUELISTA&quot;]" data-order="0" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar(); agente('add6443a-41bd-e414-f6ad-e58d267f4e95');" data-hero-id="jett" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png"><span class="container post"><span class="icon">
+                        </span><span class="portrait-title">Jett</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;DUELISTA&quot;]" data-order="20" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar(); agente('f94c3b30-42be-e959-889c-5aa313dba261');" data-hero-id="raze" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Raze</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;INICIADOR&quot;]" data-order="60"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('5f8d3a7f-467b-97f3-062c-13acf203c006')"
-                                data-hero-id="breach" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png"><span
-                                    class="container post"><span class="icon">
-                                    </span><span class="portrait-title">Breach</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CONTROLADOR&quot;]" data-order="120"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('8e253930-4c05-31dd-1b6c-968525494517')"
-                                data-hero-id="omen" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                        </span><span class="portrait-title">Raze</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;INICIADOR&quot;]" data-order="60" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('5f8d3a7f-467b-97f3-062c-13acf203c006')" data-hero-id="breach" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png"><span class="container post"><span class="icon">
+                    </span><span class="portrait-title">Breach</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CONTROLADOR&quot;]" data-order="120" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('8e253930-4c05-31dd-1b6c-968525494517')" data-hero-id="omen" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Omen</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CONTROLADOR&quot;]" data-order="200"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('9f0d8ba9-4140-b941-57d3-a7ad57c6b417')"
-                                data-hero-id="brimstone" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Omen</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CONTROLADOR&quot;]" data-order="200" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 0px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('9f0d8ba9-4140-b941-57d3-a7ad57c6b417')" data-hero-id="brimstone" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Brimstone</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;DUELISTA&quot;]" data-order="300"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('eb93336a-449b-9c1b-0a54-a891f7921d69')"
-                                data-hero-id="phoenix" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Brimstone</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;DUELISTA&quot;]" data-order="300" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('eb93336a-449b-9c1b-0a54-a891f7921d69')" data-hero-id="phoenix" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Phoenix</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CENTINELA&quot;]" data-order="420"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('569fdd95-4d10-43ab-ca70-79becc718b46')"
-                                data-hero-id="sage" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Phoenix</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CENTINELA&quot;]" data-order="420" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('569fdd95-4d10-43ab-ca70-79becc718b46')" data-hero-id="sage" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Sage</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;INICIADOR&quot;]" data-order="560"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('320b2a48-4d9b-a075-30f1-1f93a9b638fa')"
-                                data-hero-id="sova" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Sage</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;INICIADOR&quot;]" data-order="560" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('320b2a48-4d9b-a075-30f1-1f93a9b638fa')" data-hero-id="sova" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Sova</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CONTROLADOR&quot;]" data-order="640"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('707eab51-4836-f488-046a-cda6bf494859')"
-                                data-hero-id="viper" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Sova</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CONTROLADOR&quot;]" data-order="640" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('707eab51-4836-f488-046a-cda6bf494859')" data-hero-id="viper" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Viper</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CENTINELA&quot;]" data-order="720"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('117ed9e3-49f3-6512-3ccf-0cada7e3823b')"
-                                data-hero-id="cypher" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Viper</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CENTINELA&quot;]" data-order="720" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 254px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('117ed9e3-49f3-6512-3ccf-0cada7e3823b')" data-hero-id="cypher" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Cypher</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;DUELISTA&quot;]" data-order="800"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('a3bfb853-43b2-7238-a4f1-ad90e9e46bcc')"
-                                data-hero-id="reyna" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Cypher</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;DUELISTA&quot;]" data-order="800" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('a3bfb853-43b2-7238-a4f1-ad90e9e46bcc')" data-hero-id="reyna" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Reyna</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CENTINELA&quot;]" data-order="880"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('1e58de9c-4950-5125-93e9-a0aee9f98746')"
-                                data-hero-id="killjoy" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Reyna</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CENTINELA&quot;]" data-order="880" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('1e58de9c-4950-5125-93e9-a0aee9f98746')" data-hero-id="killjoy" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Killjoy</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;INICIADOR&quot;]" data-order="1080"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('6f2a04ca-43e0-be17-7f36-b3908627744d')"
-                                data-hero-id="skye" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Killjoy</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;INICIADOR&quot;]" data-order="1080" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('6f2a04ca-43e0-be17-7f36-b3908627744d')" data-hero-id="skye" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Skye</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;DUELISTA&quot;]" data-order="1300"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('7f94d92c-4234-0a36-9646-3a87eb8b5c89')"
-                                data-hero-id="yoru" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Skye</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;DUELISTA&quot;]" data-order="1300" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('7f94d92c-4234-0a36-9646-3a87eb8b5c89')" data-hero-id="yoru" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Yoru</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CONTROLADOR&quot;]" data-order="1540"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('41fb69c1-4189-7b37-f117-bcaf1e96f1bf')"
-                                data-hero-id="astra" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Yoru</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CONTROLADOR&quot;]" data-order="1540" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(596px, 507px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('41fb69c1-4189-7b37-f117-bcaf1e96f1bf')" data-hero-id="astra" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Astra</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;INICIADOR&quot;]" data-order="1650"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('601dbbe7-43ce-be57-2a40-4abd24953621')"
-                                data-hero-id="kay/o" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Astra</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;INICIADOR&quot;]" data-order="1650" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('601dbbe7-43ce-be57-2a40-4abd24953621')" data-hero-id="kay/o" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">KAY/O</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;CENTINELA&quot;]" data-order="1920"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('22697a3d-45bf-8dd7-4fec-84a9e28c69d7')"
-                                data-hero-id="chamber" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">KAY/O</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;CENTINELA&quot;]" data-order="1920" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(149px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('22697a3d-45bf-8dd7-4fec-84a9e28c69d7')" data-hero-id="chamber" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Chamber</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;DUELISTA&quot;]" data-order="2210"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('bb2a4828-46eb-8cd1-e765-15848195d751')"
-                                data-hero-id="neon" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png"><span
-                                    class="container post"><span class="icon"></span><span
-                                        class="portrait-title">Neon</span></span></a>
-                        </div>
-                        <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible"
-                            data-groups="[&quot;INICIADOR&quot;]" data-order="2340"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;">
-                            <a class="hero-portrait-detailed"
-                                onclick="openSidebar();agente('dade69b4-4f5a-8528-247b-219e5a1facd6')"
-                                data-hero-id="fade" data-analytics="hero-selection"
-                                data-analytics-placement="Hero Index"><img class="portrait"
-                                    src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png"><span
-                                    class="container post"><span class="icon">
+                    </span><span class="portrait-title">Chamber</span></span></a></div><div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;DUELISTA&quot;]" data-order="2210" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(298px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('bb2a4828-46eb-8cd1-e765-15848195d751')" data-hero-id="neon" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png"><span class="container post"><span class="icon"></span><span class="portrait-title">Neon</span></span></a></div>
+                    <div class="hero-portrait-detailed-container shuffle-item shuffle-item--visible" data-groups="[&quot;INICIADOR&quot;]" data-order="2340" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(447px, 761px) scale(1); transition-duration: 200ms; transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: transform, opacity;"><a class="hero-portrait-detailed" onclick="openSidebar();agente('dade69b4-4f5a-8528-247b-219e5a1facd6')" data-hero-id="fade" data-analytics="hero-selection" data-analytics-placement="Hero Index"><img class="portrait" src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png"><span class="container post"><span class="icon">
 
-                                    </span><span class="portrait-title">Fade</span></span>
-                            </a>
-                        </div>
+                    </span><span class="portrait-title">Fade</span></span>
+                    </a>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -437,9 +248,9 @@
     <div class="sidebar" id="sidebar">
 
         <!--Selector de idioma-->
-        <select id="language" onchange="selector()">
-            <option value="/?language=es-ES">Spanish</option>
-
+        <select id="language"onchange="selector()">
+              <option value="/?language=es-ES">Spanish</option>
+          
             <option value="/?language=en-US">English</option>
 
             <option value="/?language=es-MX">Spanish(LATAM)</option>
@@ -465,28 +276,27 @@
             <option value="/?language=ru-RU">Russian</option>
 
             <option value="/?language=th-TH">Thai</option>
-
-            <option value="/?language=tr-TR">Turkish</option>
+            
+            <option value="/?language=tr-TR">Turkish</option> 
 
             <option value="/?language=vi-VN">Vietnamese</option>
 
             <option value="/?language=zh-CN">Chinese(Simplified)</option>
 
             <option value="/?language=zh-TW">Chinese</option>
-        </select>
+          </select>
 
-
-
-
-        <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross" id="close"><img
-                src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
+        
+            
+     
+        <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross" id="close"><img src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png" class="cross-closing">
         </button>
         <div class="agentfirst">
             <div class="half-left">
-
-                <img id="agent-background" src="">
-                <img id="sidebar-portrait-agent" src="">
-
+            
+            <img id="agent-background" src="">
+            <img id="sidebar-portrait-agent" src="">
+                
             </div>
             <div class="half-right">
                 <div>
@@ -494,7 +304,7 @@
                     <h3 id="description"></h3>
                     <div id="abilities">
                         <div id="ab-icons">
-
+                            
                         </div>
                         <div class="ab-description">
                             <div class="tooltip">
@@ -510,22 +320,18 @@
                         </div>
                     </div>
                     <div>
-                        <video onloadedmetadata="this.muted=true" class="videoabilities" id="imgvideo"
-                            poster="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2f4463674f62877e/5ecad7ce722d20585b2f4a40/Brimstone_Q.jpg"
-                            controls mute autoplay loop>
-                            <source id="videoabilities"
-                                src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte2b9eb1923ef64fa/5ecad7d0f5bd13348a6cac75/Brimstone_Q_v001_web.mp4"
-                                type="video/mp4">
+                        <video onloadedmetadata="this.muted=true" class="videoabilities" id="imgvideo" poster="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2f4463674f62877e/5ecad7ce722d20585b2f4a40/Brimstone_Q.jpg" controls mute autoplay loop>
+                            <source id="videoabilities" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte2b9eb1923ef64fa/5ecad7d0f5bd13348a6cac75/Brimstone_Q_v001_web.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
             </div>
         </div>
+        
 
 
 
-
-
+        
     </div>
 
 
@@ -535,134 +341,134 @@
 
     <script>
         var lenguage = '/?language=es-ES';
-        function selector() {
-            var select = document.getElementById('language');
+        function selector(){
+           var select = document.getElementById('language');
             lenguage = select.options[select.selectedIndex].value;
             getDataFromApi();
         }
+        
+        
+    
+    
+    function agente(agentcode){
+        agent = agentcode
+        getDataFromApi();
+    }
 
-
-
-
-        function agente(agentcode) {
-            agent = agentcode
-            getDataFromApi();
+    async function Ability(num) {
+        
+	    var url = 'https://valorant-api.com/v1/agents/' + agent + lenguage;
+  
+        var miRespuesta = await fetch(url,
+    {
+  	    method: 'GET',
+        
+    }
+        ).then(function(response){
+        return response.json();
+        });
+        document.getElementById('ab-title').innerText = miRespuesta.data.abilities[num].displayName;
+        document.getElementById('ab-description').innerText = miRespuesta.data.abilities[num].description;
+        if (num == 0){
+        document.getElementById('ability0').style.backgroundColor = "#ff4655";
         }
-
-        async function Ability(num) {
-
-            var url = 'https://valorant-api.com/v1/agents/' + agent + lenguage;
-
-            var miRespuesta = await fetch(url,
-                {
-                    method: 'GET',
-
-                }
-            ).then(function (response) {
-                return response.json();
-            });
-            document.getElementById('ab-title').innerText = miRespuesta.data.abilities[num].displayName;
-            document.getElementById('ab-description').innerText = miRespuesta.data.abilities[num].description;
-            if (num == 0) {
-                document.getElementById('ability0').style.backgroundColor = "#ff4655";
-            }
-            else {
-                document.getElementById('ability0').style.backgroundColor = "grey";
-            }
-            if (num == 1) {
-                document.getElementById('ability1').style.backgroundColor = "#ff4655";
-            }
-            else {
-                document.getElementById('ability1').style.backgroundColor = "grey";
-            }
-            if (num == 2) {
-                document.getElementById('ability2').style.backgroundColor = "#ff4655";
-            }
-            else {
-                document.getElementById('ability2').style.backgroundColor = "grey";
-            }
-            if (num == 3) {
-                document.getElementById('ability3').style.backgroundColor = "#ff4655";
-            }
-            else {
-                document.getElementById('ability3').style.backgroundColor = "grey";
-            }
-            if (num == 4) {
-                document.getElementById('ability4').style.backgroundColor = "#ff4655";
-            }
-            else {
-                document.getElementById('ability4').style.backgroundColor = "grey";
-            }
-
-
+        else{
+        document.getElementById('ability0').style.backgroundColor = "grey";
         }
+        if (num == 1){
+        document.getElementById('ability1').style.backgroundColor = "#ff4655";
+        }
+        else{
+        document.getElementById('ability1').style.backgroundColor = "grey";
+        }
+        if (num == 2){
+        document.getElementById('ability2').style.backgroundColor = "#ff4655";
+        }
+        else{
+        document.getElementById('ability2').style.backgroundColor = "grey";
+        }
+        if (num == 3){
+        document.getElementById('ability3').style.backgroundColor = "#ff4655";
+        }
+        else{
+        document.getElementById('ability3').style.backgroundColor = "grey";
+        }
+        if (num == 4){
+        document.getElementById('ability4').style.backgroundColor = "#ff4655";
+        }
+        else{
+        document.getElementById('ability4').style.backgroundColor = "grey";
+        }
+            
+        
+    }
 
-        function printAbilities(ability) {
+        function printAbilities(ability){
             var abilities = '';
 
-            ability.forEach(function (element, i) {
-                abilities += '<button class="btnFilter "  onclick="Ability(' + i + '); getVideoAbility(' + i + ')"><span class="btn__inner" id="ability' + i + '"><span class="btn__slide"></span><span class="btn__content"><img class="icon" id="Ability1" src="' + element.displayIcon + '"></span></span></button>';
-            });
-            document.getElementById('ab-icons').innerHTML = abilities;
+        ability.forEach(function(element, i){
+            abilities+='<button class="btnFilter "  onclick="Ability('+i+'); getVideoAbility('+ i +')"><span class="btn__inner" id="ability'+i+'"><span class="btn__slide"></span><span class="btn__content"><img class="icon" id="Ability1" src="' + element.displayIcon + '"></span></span></button>';
+        });
+        document.getElementById('ab-icons').innerHTML = abilities;
         }
 
 
         async function getDataFromApi() {
-            var url = 'https://valorant-api.com/v1/agents/' + agent + lenguage;
+	    var url = 'https://valorant-api.com/v1/agents/' + agent + lenguage;
+  
+        var miRespuesta = await fetch(url,
+    {
+  	    method: 'GET',
+        
+    }
+        ).then(function(response){
+        return response.json();
+        });
+        document.getElementById('agent-background').src = miRespuesta.data.background;
+        document.getElementById('sidebar-portrait-agent').src = miRespuesta.data.fullPortraitV2;
+        document.getElementById('agent-name').innerText = miRespuesta.data.displayName;
+        document.getElementById('description').innerText = miRespuesta.data.description;
+        document.getElementById('ab-title').innerText = miRespuesta.data.abilities[0].displayName;
+        document.getElementById('ab-description').innerText = miRespuesta.data.abilities[0].description;
 
-            var miRespuesta = await fetch(url,
-                {
-                    method: 'GET',
+        printAbilities(miRespuesta.data.abilities);
+        
+        document.getElementById('ability0').style.backgroundColor = "#ff4655";
+        /*document.getElementById('Ability1').src = miRespuesta.data.abilities[0].displayIcon;
+        document.getElementById('Ability2').src = miRespuesta.data.abilities[1].displayIcon;
+        document.getElementById('Grenade').src = miRespuesta.data.abilities[2].displayIcon;
+        document.getElementById('Ultimate').src = miRespuesta.data.abilities[3].displayIcon;
+        document.getElementById('Passive').src = miRespuesta.data.abilities[4].displayIcon;*/
+        let etiquetaAudio = document.createElement("audio")
+        etiquetaAudio.setAttribute("src", miRespuesta.data.voiceLine.mediaList[0].wave)
+        etiquetaAudio.play()
+    }
 
-                }
-            ).then(function (response) {
-                return response.json();
-            });
-            document.getElementById('agent-background').src = miRespuesta.data.background;
-            document.getElementById('sidebar-portrait-agent').src = miRespuesta.data.fullPortraitV2;
-            document.getElementById('agent-name').innerText = miRespuesta.data.displayName;
-            document.getElementById('description').innerText = miRespuesta.data.description;
-            document.getElementById('ab-title').innerText = miRespuesta.data.abilities[0].displayName;
-            document.getElementById('ab-description').innerText = miRespuesta.data.abilities[0].description;
-
-            printAbilities(miRespuesta.data.abilities);
-
-            document.getElementById('ability0').style.backgroundColor = "#ff4655";
-            /*document.getElementById('Ability1').src = miRespuesta.data.abilities[0].displayIcon;
-            document.getElementById('Ability2').src = miRespuesta.data.abilities[1].displayIcon;
-            document.getElementById('Grenade').src = miRespuesta.data.abilities[2].displayIcon;
-            document.getElementById('Ultimate').src = miRespuesta.data.abilities[3].displayIcon;
-            document.getElementById('Passive').src = miRespuesta.data.abilities[4].displayIcon;*/
-            let etiquetaAudio = document.createElement("audio")
-            etiquetaAudio.setAttribute("src", miRespuesta.data.voiceLine.mediaList[0].wave)
-            etiquetaAudio.play()
-        }
-
-        /*SCRIPT PARA VIDEOS DE AGENTES*/
-        var anumber;
-        function agentnumber(num) {
-            anumber = num;
-        }
-        async function getVideoAbility(abilityNum) {
-            var url = 'https://playvalorant.com/page-data/en-us/agents/page-data.json';
-
-            var miRespuesta = await fetch(url,
-                {
-                    method: 'GET',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                }
-            ).then(function (response) {
-                return response.json();
-            });
-            document.getElementById('imgvideo').setAttribute('poster', miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].static_image.url);
-            document.getElementById('videoabilities').src = miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].video.file.url;
-        }
+    /*SCRIPT PARA VIDEOS DE AGENTES*/
+    var anumber;
+    function agentnumber(num){
+        anumber = num;
+    }
+    async function getVideoAbility(abilityNum) {
+	    var url = 'https://playvalorant.com/page-data/en-us/agents/page-data.json';
+  
+        var miRespuesta = await fetch(url,
+    {
+  	    method: 'GET',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json'
+            },
+    }
+        ).then(function(response){
+        return response.json();
+        });
+        document.getElementById('imgvideo').setAttribute('poster', miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].static_image.url);
+        document.getElementById('videoabilities').src = miRespuesta.result.data.allContentstackAgentList.nodes[0].agent_list[0].abilities[abilityNum].ability_video[0].video.file.url;
+    }
     </script>
-
-    <!--ORDENAR AGENTES-->
+   
+       <!--ORDENAR AGENTES-->
     <script type="text/javascript">!function (root) {
             root.messages = { "wallpaper": { "urlWide": { "title": "Ancho", "dimensions": "(2560 x 1440)" }, "urlStandard": { "title": "Estándar", "dimensions": "(2048 x 1536)" }, "urlTablet": { "title": "Tableta", "dimensions": "(2048 x 2048)" }, "urlMobile": { "title": "Móvil", "dimensions": "(1080 x 1920)" }, "urlFacebook": { "title": "Facebook", "dimensions": "(851 x 315)" }, "urlTwitter": { "title": "Twitter", "dimensions": "(1500 x 500)" } }, "img": { "dva": "https://static.playoverwatch.com/img/dva-sm-0402d09305.png" } }
         }(this)
@@ -671,12 +477,11 @@
     <script type="text/javascript" src="https://static.playoverwatch.com/vendor-b2d9b4cfaf.js"></script>
     <script type="text/javascript" src="https://static.playoverwatch.com/app-b9b4fc2518.js"></script>
 
-
+ 
     <script>(function init() {
-                app.heroes.init();
-            })();
+            app.heroes.init();
+        })();
     </script>
     <!--ACABA ORDENAR AGENTES-->
-</body>
-
+    </body>
 </html>
