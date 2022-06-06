@@ -344,6 +344,9 @@ h2 {
     background-color: red;
 }
 .mapsectdown{
+    display: flex;
+  justify-content: center;
+  align-items: center;
     background-color: black;
 }
 
@@ -933,4 +936,36 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 .text-center{
     padding-top: 10px;
+}
+
+.miniMap{
+    position: relative;
+    height: 100%;
+}
+
+.divminimap{
+    position: relative;
+    height: 80%;
+}
+
+#callouts{
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+.callcontainer{
+    position: relative;
+    top: 115%;
+    left: 53%;
+}
+
+.call{
+    background-color: rgba(128, 128, 128, 0.821);
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 2px;
+    z-index: 99999;
+    color: white;
+    position: absolute;
 }

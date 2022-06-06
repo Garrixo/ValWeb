@@ -133,15 +133,22 @@
 
     
     <div class="mapsect mapsectdown">
+        <div class="divminimap">
+            <div id="callouts">
+                <div class="callcontainer" id="callcontainer">
 
+                </div>
 
-
+            </div>
+            <img class="miniMap" id="miniMap" src="https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/displayicon.png">
+        </div>
     </div>
 
     <script>
         
          var lenguage = '/?language=es-ES';
          var selected = 'b529448b-4d60-346e-e89e-00a4c527a405';
+         var multiplayer = 18;
          mapShow(selected);
 
          function languageSelector() {
@@ -162,7 +169,61 @@
                 return response.json();
             });
             document.getElementById('mapName').innerText = miRespuesta.data.displayName;
-        
+            document.getElementById('miniMap').src = miRespuesta.data.displayIcon;
+            
+
+            if(selected == 'b529448b-4d60-346e-e89e-00a4c527a405'){
+                multiplayer = 18;
+                document.getElementById('callcontainer').style.top = "115%";
+                document.getElementById('callcontainer').style.left = "53%";
+
+                console.log(multiplayer);
+            } 
+            if(selected == '2fb9a4fd-47b8-4e7d-a969-74b4046ebd53'){
+                multiplayer = 21;
+                document.getElementById('callcontainer').style.top = "74%";
+                document.getElementById('callcontainer').style.left = "42%";
+                console.log(multiplayer);
+            }
+            if(selected == 'e2ad5c54-4114-a870-9641-8ea21279579a'){
+                multiplayer = 19;
+                document.getElementById('callcontainer').style.top = "29%";
+                document.getElementById('callcontainer').style.left = "42%";
+                console.log(multiplayer);
+            }
+            if(selected == '2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba'){
+                multiplayer = 25;
+                document.getElementById('callcontainer').style.top = "93%";
+                document.getElementById('callcontainer').style.left = "54%";
+                console.log(multiplayer);
+            }
+            if(selected == '2bee0dc9-4ffe-519b-1cbd-7fbe763a6047'){
+                multiplayer = 19;
+                document.getElementById('callcontainer').style.top = "63%";
+                document.getElementById('callcontainer').style.left = "106%";
+                console.log(multiplayer);
+            }
+            if(selected == 'd960549e-485c-e861-8d71-aa9d1aed12a2'){
+                multiplayer = 18;
+                document.getElementById('callcontainer').style.top = "68%";
+                document.getElementById('callcontainer').style.left = "81%";
+                console.log(multiplayer);
+            }
+            if(selected == '7eaecc1b-4337-bbf6-6ab9-04b8f06b3319'){
+                multiplayer = 20;
+                document.getElementById('callcontainer').style.top = "55%";
+                document.getElementById('callcontainer').style.left = "79%";
+                console.log(multiplayer);
+            }
+            printCallouts(miRespuesta.data.callouts);
+        }
+
+        function printCallouts(calls){
+            var Callouts = '';
+            calls.forEach(function (element, i) {
+                Callouts += '<p class="call" style="left:'+ (calls[i].location.y/multiplayer) +'px;top:'+ (calls[i].location.x/multiplayer)*(-1) +'px;">'+ calls[i].regionName +'</p>'
+                });
+            document.getElementById('callcontainer').innerHTML = Callouts;
         }
 
     </script>
