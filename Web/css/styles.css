@@ -797,24 +797,24 @@ svg {
 }
 
 .input-maps:nth-of-type(2):checked ~ .label-maps {
-	transform: translate(-100.28%);
+	transform: translate(-100.14%);
 }
 
 .input-maps:nth-of-type(3):checked ~ .label-maps {
-	transform: translate(-200.59%);
+	transform: translate(-200.29%);
 }
 
 .input-maps:nth-of-type(4):checked ~ .label-maps {
-	transform: translate(-300.87%);
+	transform: translate(-300.47%);
 }
 .input-maps:nth-of-type(5):checked ~ .label-maps {
-	transform: translate(-401.18%);
+	transform: translate(-400.6%);
 }
 .input-maps:nth-of-type(6):checked ~ .label-maps {
-	transform: translate(-501.45%);
+	transform: translate(-500.78%);
 }
 .input-maps:nth-of-type(7):checked ~ .label-maps {
-	transform: translate(-601.74%);
+	transform: translate(-600.90%);
 }
 
 .label-maps {
