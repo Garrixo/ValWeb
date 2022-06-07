@@ -72,10 +72,13 @@ function hideModal() {
   const modal = document.querySelector('#myDiv');
   modal.classList.remove('show');
 
+  document.getElementById('overf').style.overflow = 'visible';
+
 }
 function showModal() {
   const modal = document.querySelector('#myDiv');
   modal.classList.add('show');
+  document.getElementById('overf').style.overflow = 'hidden';
 }
 
 
@@ -85,6 +88,7 @@ function showModal() {
 function openSidebar() {
   console.log('sidebar-mainpage');
   document.querySelector('.sidebar-mainpage').classList.add('open');
+  document.getElementById('overf').style.overflow = 'hidden';
 }
 /*-----------------------------------------*/
 /*---cerrar cosa---*/
@@ -92,6 +96,7 @@ function openSidebar() {
 function closeSidebar() {
   console.log('sidebar-mainpage');
   document.querySelector('.sidebar-mainpage').classList.remove('open');
+  document.getElementById('overf').style.overflow = 'visible';
 }
 /*-----------------------------------------*/
 /*---Fechita do merda---*/
