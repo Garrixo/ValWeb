@@ -1,7 +1,6 @@
 @import url(https://lolstatic-a.akamaihd.net/webfonts/live/css/valorant/fonts.css);
 
 .fotofondo {
-    background-image: url("https://i.pinimg.com/originals/93/69/11/936911b1b403e2b73aa88f51d6ddc8f3.png");
     background-size: cover;
     background-repeat: no-repeat;
     /*filter: grayscale(70%);*/
@@ -1192,4 +1191,17 @@ footer p {
     z-index: 99999;
     color: white;
     position: absolute;
+}
+
+.videobackground {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   position: fixed;
+   object-fit: cover;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+
 }

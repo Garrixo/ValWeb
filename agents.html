@@ -41,20 +41,33 @@
           document.getElementById('close').style.display = 'none';
           document.getElementById('overflow').style.overflow = 'visible';
         }
+        function openSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.add('open');
+          document.getElementById('hidden-button-cross').style.display ='block';
+          document.getElementById('overflow').style.overflow = 'hidden';
+        }
+      
+        function closeSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.remove('open');
+          document.getElementById('hidden-button-cross').style.display = 'none';
+          document.getElementById('overflow').style.overflow = 'visible';
+        }
       </script>
 </head>
 
 <body class="heroes es-es" id="overflow" itemscope="itemscope" itemtype="http://schema.org/WebPage">
     <div class="fotofondo">
     <header class="header-index">
-        <img onclick="openSidebar()" class="mline"
+        <img onclick="openSidebarMenu()" class="mline"
             src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
         <div class="sidebar-mainpage">
             <div class="header-sidebar-index">
                 <div class="titulo-sidebar-index title-header">Valorant</div>
 
-                <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
+                <button tabindex="-1" onclick="closeSidebarMenu()" class="hidden-button-cross" id="hidden-button-cross"><img
                         src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
                         class="cross-closing">
                 </button>
