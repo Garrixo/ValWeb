@@ -59,7 +59,7 @@
 
 <body class="heroes es-es" id="overflow" itemscope="itemscope" itemtype="http://schema.org/WebPage">
     <div class="fotofondo">
-    <header class="header-index">
+    <header class="header-index" id="navbar">
         <img onclick="openSidebarMenu()" class="mline"
             src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
@@ -582,6 +582,20 @@
             root.messages = { "wallpaper": { "urlWide": { "title": "Ancho", "dimensions": "(2560 x 1440)" }, "urlStandard": { "title": "Estándar", "dimensions": "(2048 x 1536)" }, "urlTablet": { "title": "Tableta", "dimensions": "(2048 x 2048)" }, "urlMobile": { "title": "Móvil", "dimensions": "(1080 x 1920)" }, "urlFacebook": { "title": "Facebook", "dimensions": "(851 x 315)" }, "urlTwitter": { "title": "Twitter", "dimensions": "(1500 x 500)" } }, "img": { "dva": "https://static.playoverwatch.com/img/dva-sm-0402d09305.png" } }
         }(this)
     </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     <script type="text/javascript" src="https://static.playoverwatch.com/overwatch-ui-44cd35d6a8.js"></script>
     <script type="text/javascript" src="https://static.playoverwatch.com/vendor-b2d9b4cfaf.js"></script>
     <script type="text/javascript" src="https://static.playoverwatch.com/app-b9b4fc2518.js"></script>

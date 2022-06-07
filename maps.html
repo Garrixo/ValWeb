@@ -14,7 +14,7 @@
 <body class="overf fotofondo" id="overf">
 
     <div>
-        <header class="header-index">
+        <header class="header-index" id="navbar">
             <img onclick="openSidebar()" class="mline"
                 src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
@@ -367,7 +367,20 @@
         }
 
     </script>
-
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
