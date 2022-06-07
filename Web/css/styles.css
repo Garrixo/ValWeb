@@ -133,7 +133,7 @@ li {
 .titulo {
     font-family: 'Anton';
     font-weight: 100;
-    font-size: 150px;
+    font-size: 120px;
     position: absolute;
     position: inherit;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.289);
@@ -146,10 +146,10 @@ li {
 }
 
 .textbox {
-    display: block;
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
     padding-top: 40px;
-    padding-left: 12%;
+    padding-left: 0;
     padding-bottom: 375px;
 }
 
@@ -183,7 +183,7 @@ li {
     display: block;
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+    padding-left: 50px;
 }
 
 .imageag {
@@ -450,7 +450,10 @@ li {
     justify-content: space-between;
 
 }
-
+.boo{
+    margin-top: 80px;
+    margin-right: 200px;
+}
 .coloc {
     float: left;
 }
