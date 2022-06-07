@@ -931,13 +931,15 @@ button {
 }
 
 #ab-title{
+    font-size: 30px;
     display: block;
     margin-top: 0;
     color: gray;
 }
 
 #ab-description{
-    font-size: small;
+    letter-spacing:1px;
+    font-size: large;
     color: white;
     width: 100%;
     flex-direction: column;
@@ -963,12 +965,14 @@ button {
 }
 
 /*TOOLTIP TEXT*/
-.tooltip {
+.ab-tooltip {
+    font-family: Tungsten-Bold,arial,georgia,sans-serif;
     position: absolute;
     display: inline-block;
   }
   
-  .tooltip .tooltiptext {
+  .ab-tooltip .ab-tooltiptext {
+    font-family: Tungsten-Bold,arial,georgia,sans-serif;
     text-align: center;
     vertical-align: middle;
     align-items: center;
@@ -986,7 +990,7 @@ button {
     left: 110%;
   }
   
-  .tooltip .tooltiptext::after {
+  .ab-tooltip .ab-tooltiptext::after {
 
     z-index: 1000;
     content: "";
@@ -998,7 +1002,7 @@ button {
     border-style: solid;
     border-color: transparent black transparent transparent;
   }
-  .tooltip:hover .tooltiptext {
+  .ab-tooltip:hover .ab-tooltiptext {
     visibility: visible;
   }
 
@@ -1008,7 +1012,7 @@ button {
       right: 2%;
       bottom: 2%;
       width: 550px;
-      z-index: 1;
+      z-index: -1;
 
       overflow: hidden;
   }
