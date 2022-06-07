@@ -455,7 +455,7 @@ li {
 }
 .boo{
     margin-top: 80px;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 .coloc {
     float: left;
@@ -1220,4 +1220,15 @@ footer p {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+  .trailerimg{
+      width: 100%;
+  }
+  .centered {
+      font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
