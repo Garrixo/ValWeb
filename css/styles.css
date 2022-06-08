@@ -41,7 +41,7 @@ li {
 }
 
 .modalindex {
-    position: absolute;
+    position: fixed;
     z-index: 7;
     background-color: #120d31bb;
     top: 0;
