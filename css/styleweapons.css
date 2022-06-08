@@ -17,13 +17,12 @@
 }
 
 html {
-    background-image: url("https://i.pinimg.com/originals/1c/65/65/1c6565655cd66c6b6e3e56288a144907.jpg");
-
+background-color: #ede8e0;
 }
 
 header {
     height: 80px;
-    background-color: rgba(30, 27, 27, 0.934);
+    background-color: rgba(0, 0, 0, 0.934);
 }
 
 .case {
@@ -125,6 +124,7 @@ a {
 .weaponCards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -132,8 +132,8 @@ a {
     align-items: center;
     text-align: center;
     margin: 15px;
-    width: 280px;
-    height: 360px;
+    width: 140px;
+    height: 180px;
     border-radius: 15px;
     padding: 1.5rem;
     background: white;
@@ -176,7 +176,7 @@ a {
 
 
 .card .info {
-    font-size: 50px;
+    font-size: 25px;
     font-family: Tungsten-Bold, arial, georgia, sans-serif;
     top: 35%;
     position: absolute;
@@ -1017,3 +1017,59 @@ section .navigation li:hover>img {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.firstpart{
+    text-align: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.weaponsheader{
+    width: 100%;
+}
+
+.secondpart{
+    height: auto;
+    width: 100%;
+}
+
+.vsvg{
+    z-index: -1;
+     position: absolute;
+    fill: transparent;
+    stroke: #bdbcb7;
+    stroke-width: .5;
+    width: 40%;
+    top: 120%;
+    right: 0;
+}
+
+.arsenalinfo{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+    font-family: Tungsten-Bold, arial, georgia, sans-serif;
+    color: #ede8e0;
+}
+.arstitle{
+    text-shadow: 2px 0 0 gray, -2px 0 0 gray, 0 2px 0 gray, 0 -2px 0 gray, 1px 1px gray, -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray;
+    font-size: 200px;
+}
+.arsdescript{
+    text-shadow: 1px 0 0 gray, -1px 0 0 gray, 0 1px 0 gray, 0 -1px 0 gray, 1px 1px gray, -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray;
+    font-size: 50px;
+}
+
+.sticky {
+    z-index: 99999;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .firstpart {
+    padding-top: 60px;
+  }

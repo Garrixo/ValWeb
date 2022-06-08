@@ -399,7 +399,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #ede8e0;
 }
 
 
@@ -1039,7 +1039,7 @@ li {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
     font-size: 10rem;
 }
@@ -1221,6 +1221,12 @@ footer p {
     top: 0;
     width: 100%;
   }
+  .sticky + .form-maps {
+    padding-top: 60px;
+  }
+  .sticky + .modalindex {
+    padding-top: 60px;
+  } 
 
   .trailerimg{
       width: 100%;
