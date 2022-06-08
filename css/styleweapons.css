@@ -278,6 +278,7 @@ section .navigation li:hover>img {
 }
 
 .parent {
+    overflow-y: hidden;
     height: 100%;
     width: 100%;
     overflow-x: hidden;

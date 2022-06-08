@@ -16,6 +16,7 @@
             console.log('sidebar');
             document.querySelector('.sidebar').classList.add('open');
             document.getElementById('close').style.display = 'block';
+            document.getElementById('overflow').style.overflow = 'hidden';
             const video = document.getElementById("video");
             video.play();
 
@@ -25,6 +26,7 @@
             console.log('sidebar');
             document.querySelector('.sidebar').classList.remove('open');
             document.getElementById('close').style.display = 'none';
+            document.getElementById('overflow').style.overflow = 'visible';
             const video = document.getElementById("video");
             video.pause();
         }
@@ -446,7 +448,6 @@
             document.getElementById('skin' + num).style.background = "#ff4655";
             document.getElementById('skin' + num).style.opacity = 1;
             document.getElementById('skinimg' + num).style.width = "230px";
-            document.getElementById('scroll').style.transform = " translateX(" + -22.5 * num + "%)"
         }
 
         async function weaponInfo(num) {
