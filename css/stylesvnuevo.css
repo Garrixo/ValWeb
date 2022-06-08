@@ -1016,4 +1016,29 @@ button {
 
       overflow: hidden;
   }
+  .aginfo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   
+font-family: Tungsten-Bold, arial, georgia, sans-serif;
+color: #ede8e0;
+}
+.agtitle{
+text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+font-size: 200px;
+}
+.agdescript{
+text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+font-size: 50px;
+}
+.agentsheader{
+    width: 100%;
+}
+.firstpart{
+    text-align: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
