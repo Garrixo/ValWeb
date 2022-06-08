@@ -21,6 +21,7 @@ background-color: #ede8e0;
 }
 
 header {
+    z-index: 3;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.934);
 }
