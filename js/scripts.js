@@ -119,7 +119,18 @@ function _scrollTop() {
   });
 }
 
+/*-----------------------------------------*/
+/*---Validad fORMULARUI MODAL---*/
+/*-----------------------------------------*/
+let modalo = document.querySelector('.modalv');
 
+function closeModal() {
+  modalo.classList.remove('openv');
+}
+
+function openModal() {
+  modalo.classList.add('openv');
+}
 /*-----------------------------------------*/
 /*---Validad fORMULARUI---*/
 /*-----------------------------------------*/
@@ -133,19 +144,19 @@ function Validate() {
   let mapa = document.getElementById("Map").value;
   let personaje = document.getElementById("Character").value;
 
+
+
+
   //const data = '{name2:  "${this.name1}"  , surname2: "${this.surname1}", phone2: ${this.phone1},pass2: "${this.pass1}", fecha: ${this.day1} + "/" + ${this.month1} + "/" + ${this.year1}}';
   if (name1 === "" || surname1 === "" || mail === "" || link === "" || mapa === "Mapa" || personaje === "Personaje") {
     alert("Falta contenido");
   } else {
-    alert("Gracias por el envio")
-
-    //alert(JSON.stringify(data));
+    alert("Gracias por el envio");
+    openModal();
   }
 }
 
 function redirect(pagina) {
-
   window.location.href = pagina;
 }
-
 
