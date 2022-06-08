@@ -329,7 +329,7 @@ li {
 
 .sidebar-mainpage {
     background-color: #263238;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 0;
     width: 100%;

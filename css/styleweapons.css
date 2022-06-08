@@ -1078,7 +1078,7 @@ section .navigation li:hover>img {
   }
   .sidebar-mainpage {
     background-color: #263238;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 0;
     width: 100%;
@@ -1116,6 +1116,11 @@ section .navigation li:hover>img {
     font-weight: 30;
     width: 2000px;
     font-family: 'VALORANT', sans-serif;
+}
+.boton{
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
   @media only screen and (max-width: 800px) {
     .mline {

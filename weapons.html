@@ -6,7 +6,6 @@
     <title>Armas y diseños - Valorant</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styleweapons.css">
-    <script src="js/scripts.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         @import url('http://fonts.cdnfonts.com/css/valorant');
@@ -41,6 +40,9 @@
           document.querySelector('.sidebar-mainpage').classList.remove('open');
           document.getElementById('hidden-button-cross').style.display = 'none';
           document.getElementById('overflow').style.overflow = 'visible';
+        }
+        function redirect(pagina) {
+            window.location.href = pagina;
         }
     </script>
     <script>
@@ -86,7 +88,7 @@
                         <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Agentes</span>
+                                <span class="btn__content">Agentes</span>
                             </span>
                         </button>
                     </div>
@@ -94,7 +96,7 @@
                         <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Armas</span>
+                                <span class="btn__content">Arsenal</span>
                             </span>
                         </button>
                     </div>
@@ -103,7 +105,7 @@
                         <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Mapas</span>
+                                <span class="btn__content">Mapas</span>
                             </span>
                         </button>
                     </div>
