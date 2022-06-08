@@ -1064,7 +1064,7 @@ section .navigation li:hover>img {
 }
 
 .sticky {
-    z-index: 99999;
+    z-index: 3;
     background-color: black;
     position: fixed;
     top: 0;
