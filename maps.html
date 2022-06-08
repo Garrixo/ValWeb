@@ -20,7 +20,7 @@
 
             <div class="sidebar-mainpage">
                 <div class="header-sidebar-index">
-                    <div class="titulo-sidebar-index title-header">Valorant</div>
+                    <div class="titulo-sidebar-index title-header"> <a href="./index.html">Valorant</a></div>
 
                     <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
                             src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
@@ -40,7 +40,7 @@
                         <button class="btn btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Agentes</span>
+                                <span class="btn__content">Agentes</span>
                             </span>
                         </button>
                     </div>
@@ -48,7 +48,7 @@
                         <button class="btn btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Armas</span>
+                                <span class="btn__content">Arsenal</span>
                             </span>
                         </button>
                     </div>
@@ -57,11 +57,11 @@
                         <button class="btn btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
-                                <span class="btn__content">Ir Mapas</span>
+                                <span class="btn__content">Mapas</span>
                             </span>
                         </button>
                     </div>
-                    <select id="language" class="language-selec" onchange="languageSelector()"> 
+                    <select id="language" class="language-selec" onchange="languageSelector()">
                         <option value="/?language=es-ES">Spanish</option>
 
                         <option value="/?language=en-US">English</option>
@@ -103,7 +103,7 @@
             <nav class="navtop">
                 <ul class="ul-header">
                     <li class="case">
-                        <a class="header-a"href="./index.html">Home</a>
+                        <a class="header-a" href="./index.html">Home</a>
                     </li>
                     <li class="case">
                         <a class="header-a" href="./agents.html">Agentes</a>
@@ -112,54 +112,56 @@
                         <a class="header-a" href="./maps.html">Mapas</a>
                     </li>
                     <li class="case">
-                        <a class="header-a" href="./weapons.html">Armas</a>
+                        <a class="header-a" href="./weapons.html">Arsenal</a>
                     </li>
                     <!-- <li class="case"> -->
-                        <select id="language" class="language-selec" onchange="languageSelector()"> 
-                            <option value="/?language=es-ES">Spanish</option>
-    
-                            <option value="/?language=en-US">English</option>
-    
-                            <option value="/?language=es-MX">Spanish(LATAM)</option>
-    
-                            <option value="/?language=fr-FR">French</option>
-    
-                            <option value="/?language=de-DE">Alemán</option>
-    
-                            <option value="/?language=ja-JP">Japones</option>
-    
-                            <option value="/?language=ko-KR">Koreano</option>
-    
-                            <option value="/?language=ar-AE">Arabic</option>
-    
-                            <option value="/?language=id-ID">Indonesian</option>
-    
-                            <option value="/?language=it-IT">Italian</option>
-    
-                            <option value="/?language=pt-BR">Portuguese (BR)</option>
-    
-                            <option value="/?language=pl-PL">Polish</option>
-    
-                            <option value="/?language=ru-RU">Russian</option>
-    
-                            <option value="/?language=th-TH">Thai</option>
-    
-                            <option value="/?language=tr-TR">Turkish</option>
-    
-                            <option value="/?language=vi-VN">Vietnamese</option>
-    
-                            <option value="/?language=zh-CN">Chinese(Simplified)</option>
-    
-                            <option value="/?language=zh-TW">Chinese</option>
-                        </select>
+                    <select id="language" class="language-selec" onchange="languageSelector()">
+                        <option value="/?language=es-ES">Spanish</option>
+
+                        <option value="/?language=en-US">English</option>
+
+                        <option value="/?language=es-MX">Spanish(LATAM)</option>
+
+                        <option value="/?language=fr-FR">French</option>
+
+                        <option value="/?language=de-DE">Alemán</option>
+
+                        <option value="/?language=ja-JP">Japones</option>
+
+                        <option value="/?language=ko-KR">Koreano</option>
+
+                        <option value="/?language=ar-AE">Arabic</option>
+
+                        <option value="/?language=id-ID">Indonesian</option>
+
+                        <option value="/?language=it-IT">Italian</option>
+
+                        <option value="/?language=pt-BR">Portuguese (BR)</option>
+
+                        <option value="/?language=pl-PL">Polish</option>
+
+                        <option value="/?language=ru-RU">Russian</option>
+
+                        <option value="/?language=th-TH">Thai</option>
+
+                        <option value="/?language=tr-TR">Turkish</option>
+
+                        <option value="/?language=vi-VN">Vietnamese</option>
+
+                        <option value="/?language=zh-CN">Chinese(Simplified)</option>
+
+                        <option value="/?language=zh-TW">Chinese</option>
+                    </select>
                     <!-- </li> -->
                 </ul>
             </nav>
-            <div class="uptitle">
-                <h2 class="title-header">
-                    vAlorant
-                </h2>
-            </div>
+            <a class="nostyles" href="./index.html">
+                <div class="uptitle">
+                    <h2 class="title-header" href="./index.html">
+                        vAlorant
+                    </h2>
+                </div>
+            </a>
         </header>
     </div>
 
@@ -279,7 +281,7 @@
             <!--foote_bottom_ul_amrc ends here-->
             <p class="text-center">Copyright @2017 | Designed With by <a href="#">ValorantESP</a></p>
 
-          
+
             <!--social_footer_ul ends here-->
         </div>
 
@@ -367,19 +369,19 @@
         }
 
     </script>
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
