@@ -1335,7 +1335,7 @@ background-color: gray;
     background-color: #fff;
 }
 .labeltoggle {
-    z-index: 99999;
+    z-index: 1;
     display: flex;
     width: 90px;
     height: 45px;
