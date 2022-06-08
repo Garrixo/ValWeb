@@ -555,7 +555,9 @@ li {
         font-size: 90px;
 
     }
-
+    .imgweaponsmenu{
+    display: none;
+    }
     .subtitle {
         width: 400px;
     }
@@ -609,7 +611,9 @@ li {
         padding-left: 30px;
         margin-top: 0px;
     }
-
+    .imgweaponsmenu{
+        display: none;
+        }
     .boo {
         display: none;
     }

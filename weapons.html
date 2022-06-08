@@ -6,8 +6,7 @@
     <title>Armas y diseños - Valorant</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styleweapons.css">
-
-
+    <script src="js/scripts.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         @import url('http://fonts.cdnfonts.com/css/valorant');
@@ -30,6 +29,19 @@
             const video = document.getElementById("video");
             video.pause();
         }
+        function openSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.add('open');
+          document.getElementById('hidden-button-cross').style.display ='block';
+          document.getElementById('overflow').style.overflow = 'hidden';
+        }
+      
+        function closeSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.remove('open');
+          document.getElementById('hidden-button-cross').style.display = 'none';
+          document.getElementById('overflow').style.overflow = 'visible';
+        }
     </script>
     <script>
         $('#audio-control').click(function () {
@@ -47,23 +59,23 @@
 
 </head>
 
-<body>
+<body  id="overflow">
     <header id="navbar">
-        <!-- <img onclick="openSidebar()" class="mline" 
+        <img onclick="openSidebarMenu()" class="mline" 
                 src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
 
             <div class="sidebar-mainpage">
                 <div class="header-sidebar-index">
                     <div class="titulo-sidebar-index title-header">Valorant</div>
 
-                    <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross"><img
+                    <button tabindex="-1" onclick="closeSidebarMenu()" class="hidden-button-cross-weapons"><img
                             src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
                             class="cross-closing">
                     </button>
                 </div>
                 <div class="body-sidebar-index">
                     <div class="boton" onclick="redirect('./index.html')">
-                        <button class="btn btn--light">
+                        <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
                                 <span class="btn__content">Home</span>
@@ -71,7 +83,7 @@
                         </button>
                     </div>
                     <div class="boton" onclick="redirect('./agents.html')">
-                        <button class="btn btn--light">
+                        <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
                                 <span class="btn__content">Ir Agentes</span>
@@ -79,7 +91,7 @@
                         </button>
                     </div>
                     <div class="boton" onclick="redirect('./weapons.html')">
-                        <button class="btn btn--light">
+                        <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
                                 <span class="btn__content">Ir Armas</span>
@@ -88,7 +100,7 @@
                     </div>
 
                     <div class="boton" onclick="redirect('./maps.html')">
-                        <button class="btn btn--light">
+                        <button class="btnFilter btn--light">
                             <span class="btn__inner">
                                 <span class="btn__slide"></span>
                                 <span class="btn__content">Ir Mapas</span>
@@ -96,7 +108,7 @@
                         </button>
                     </div>
                 </div>
-            </div>-->
+            </div>
         <nav>
             <ul>
                 <li class="case">
@@ -564,6 +576,7 @@
             }
         }
     </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
