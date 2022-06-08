@@ -61,43 +61,6 @@
                             </span>
                         </button>
                     </div>
-                    <select id="language" class="language-selec" onchange="languageSelector()">
-                        <option value="/?language=es-ES">Spanish</option>
-
-                        <option value="/?language=en-US">English</option>
-
-                        <option value="/?language=es-MX">Spanish(LATAM)</option>
-
-                        <option value="/?language=fr-FR">French</option>
-
-                        <option value="/?language=de-DE">Alemán</option>
-
-                        <option value="/?language=ja-JP">Japones</option>
-
-                        <option value="/?language=ko-KR">Koreano</option>
-
-                        <option value="/?language=ar-AE">Arabic</option>
-
-                        <option value="/?language=id-ID">Indonesian</option>
-
-                        <option value="/?language=it-IT">Italian</option>
-
-                        <option value="/?language=pt-BR">Portuguese (BR)</option>
-
-                        <option value="/?language=pl-PL">Polish</option>
-
-                        <option value="/?language=ru-RU">Russian</option>
-
-                        <option value="/?language=th-TH">Thai</option>
-
-                        <option value="/?language=tr-TR">Turkish</option>
-
-                        <option value="/?language=vi-VN">Vietnamese</option>
-
-                        <option value="/?language=zh-CN">Chinese(Simplified)</option>
-
-                        <option value="/?language=zh-TW">Chinese</option>
-                    </select>
                 </div>
             </div>
             <nav class="navtop">
@@ -115,43 +78,7 @@
                         <a class="header-a" href="./weapons.html">Arsenal</a>
                     </li>
                     <!-- <li class="case"> -->
-                    <select id="language" class="language-selec" onchange="languageSelector()">
-                        <option value="/?language=es-ES">Spanish</option>
-
-                        <option value="/?language=en-US">English</option>
-
-                        <option value="/?language=es-MX">Spanish(LATAM)</option>
-
-                        <option value="/?language=fr-FR">French</option>
-
-                        <option value="/?language=de-DE">Alemán</option>
-
-                        <option value="/?language=ja-JP">Japones</option>
-
-                        <option value="/?language=ko-KR">Koreano</option>
-
-                        <option value="/?language=ar-AE">Arabic</option>
-
-                        <option value="/?language=id-ID">Indonesian</option>
-
-                        <option value="/?language=it-IT">Italian</option>
-
-                        <option value="/?language=pt-BR">Portuguese (BR)</option>
-
-                        <option value="/?language=pl-PL">Polish</option>
-
-                        <option value="/?language=ru-RU">Russian</option>
-
-                        <option value="/?language=th-TH">Thai</option>
-
-                        <option value="/?language=tr-TR">Turkish</option>
-
-                        <option value="/?language=vi-VN">Vietnamese</option>
-
-                        <option value="/?language=zh-CN">Chinese(Simplified)</option>
-
-                        <option value="/?language=zh-TW">Chinese</option>
-                    </select>
+                    
                     <!-- </li> -->
                 </ul>
             </nav>
@@ -195,6 +122,48 @@
 
 
     <div class="mapsect mapsectdown">
+        <select class="maplanguage"id="language"  onchange="languageSelector()">
+            <option value="/?language=es-ES">Spanish</option>
+
+            <option value="/?language=en-US">English</option>
+
+            <option value="/?language=es-MX">Spanish(LATAM)</option>
+
+            <option value="/?language=fr-FR">French</option>
+
+            <option value="/?language=de-DE">Alemán</option>
+
+            <option value="/?language=ja-JP">Japones</option>
+
+            <option value="/?language=ko-KR">Koreano</option>
+
+            <option value="/?language=ar-AE">Arabic</option>
+
+            <option value="/?language=id-ID">Indonesian</option>
+
+            <option value="/?language=it-IT">Italian</option>
+
+            <option value="/?language=pt-BR">Portuguese (BR)</option>
+
+            <option value="/?language=pl-PL">Polish</option>
+
+            <option value="/?language=ru-RU">Russian</option>
+
+            <option value="/?language=th-TH">Thai</option>
+
+            <option value="/?language=tr-TR">Turkish</option>
+
+            <option value="/?language=vi-VN">Vietnamese</option>
+
+            <option value="/?language=zh-CN">Chinese(Simplified)</option>
+
+            <option value="/?language=zh-TW">Chinese</option>
+        </select>
+        <div class="hider">
+            <p class="callstoggle">Calls On-Off</p>
+            <input class="toggle" type="checkbox" id="toggle" onclick="hideCalls()"/>
+            <label class="labeltoggle" for="toggle"></label>
+        </div>
         <div class="divminimap">
             <div id="callouts">
                 <div class="callcontainer" id="callcontainer">
@@ -287,7 +256,7 @@
 
     </footer>
     <script>
-
+         var hide = false;
         var lenguage = '/?language=es-ES';
         var selected = 'b529448b-4d60-346e-e89e-00a4c527a405';
         var multiplayer = 18;
@@ -366,6 +335,17 @@
                 Callouts += '<p class="call" style="left:' + (calls[i].location.y / multiplayer) + 'px;top:' + (calls[i].location.x / multiplayer) * (-1) + 'px;">' + calls[i].regionName + '</p>'
             });
             document.getElementById('callcontainer').innerHTML = Callouts;
+        }
+        function hideCalls(){
+            if(hide == false){
+                document.getElementById('callcontainer').style.display = 'none';
+                hide = true
+                console.log(hide);
+            } else {
+                document.getElementById('callcontainer').style.display = 'block';
+                hide = false
+                console.log(hide);
+            }
         }
 
     </script>

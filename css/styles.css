@@ -404,6 +404,7 @@ li {
 }
 
 .mapsectdown {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1310,4 +1311,68 @@ background-color: gray;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.maplanguage{
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    position: absolute;
+}
+
+/*TOGGLE*/
+
+
+.toggle[type="checkbox"] {
+    visibility: hidden;
+}
+.toggle[type="checkbox"]:checked + label {
+    transform: rotate(360deg);
+    background-color: rgba(0, 0, 0, 0);
+}
+.toggle[type="checkbox"]:checked + label:before {
+    transform: translateX(45px);
+    background-color: #fff;
+}
+.labeltoggle {
+    z-index: 99999;
+    display: flex;
+    width: 90px;
+    height: 45px;
+    border: 3px solid;
+    border-radius: 99em;
+    position: relative;
+    transition: transform 0.75s ease-in-out;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+}
+.labeltoggle:before {
+    transition: transform 0.75s ease;
+    transition-delay: 0.5s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(106, 103, 103);
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+}
+
+.callstoggle{
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+.hider{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
 }
