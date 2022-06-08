@@ -50,7 +50,6 @@ header {
 .uptitle {
     color: white;
     font-size: 25px;
-    padding: 20px;
     margin-left: 30px;
 }
 
@@ -1113,6 +1112,11 @@ section .navigation li:hover>img {
     padding-right: 10px;
     padding-top: 10px;
 }
+.title-header {
+    font-weight: 30;
+    width: 2000px;
+    font-family: 'VALORANT', sans-serif;
+}
   @media only screen and (max-width: 800px) {
     .mline {
         display: block;
@@ -1124,4 +1128,30 @@ section .navigation li:hover>img {
         display: none;
         padding: 0px;
     } 
+    .arstitle{
+        font-size: 100px;
+    }
+    .arsdescript{
+        font-size: 50px;
+    }
+    .arsdescript{
+        font-size: 50px;
+    }
+    .arsenalinfo{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .arstitle{
+        font-size: 70px;
+    }
+    .arsdescript{
+        font-size: 30px;
+    }
+    .arsdescript{
+        font-size: 30px;
+    }
+    .arsenalinfo{
+        width: 400px;
+    }
 }
