@@ -202,6 +202,7 @@ a {
 
 /*SIDEBAR VIDEOS*/
 .section-slider {
+    overflow-y: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
