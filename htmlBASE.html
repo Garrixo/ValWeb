@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/lore.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('http://fonts.cdnfonts.com/css/valorant');
+    </style>
+</head>
+<body>
+    <header class="header-index" id="navbar">
+        <img onclick="openSidebarMenu()" class="mline"
+            src="https://cdn.discordapp.com/attachments/895364067848511567/983448890248409088/pete-pedro-styling-aid-charts-842796.png">
+
+        <div class="sidebar-mainpage">
+            <div class="header-sidebar-index">
+                <div class="titulo-sidebar-index title-header">Valorant</div>
+
+                <button tabindex="-1" onclick="closeSidebarMenu()" class="hidden-button-cross" id="hidden-button-cross"><img
+                        src="https://img.icons8.com/material-rounded/24/000000/multiply--v1.png"
+                        class="cross-closing">
+                </button>
+            </div>
+            <div class="body-sidebar-index">
+                <div class="boton" onclick="redirect('./index.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Home</span>
+                        </span>
+                    </button>
+                </div>
+                <div class="boton" onclick="redirect('./agents.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Ir Agentes</span>
+                        </span>
+                    </button>
+                </div>
+                <div class="boton" onclick="redirect('./weapons.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Ir Armas</span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="boton" onclick="redirect('./maps.html')">
+                    <button class="btn btn--light">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">Ir Mapas</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navtop">
+            <ul class="ul-header">
+                <li class="case">
+                    <a class="header-a" href="./index.html">Home</a>
+                </li>
+                <li class="case">
+                    <a class="header-a" href="#">Agentes</a>
+                </li>
+                <li class="case">
+                    <a class="header-a" href="./maps.html">Mapas</a>
+                </li>
+                <li class="case">
+                    <a class="header-a" href="./weapons.html">Armas</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="uptitle">
+            <h2 class="title-header">
+                vAlorant
+            </h2>
+        </div>
+    </header>
+    <div class="firstpart">
+        <img class="loreheader"
+            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt77afed23a3653287/5f7b7c44f11ee70e9e14d89b/act-3-article-banner.jpg">
+        <div class="loreinfo">
+            <h1 class="loretitle">LORE</h1>
+            <p class="loredescript">Sigue la historia hasta el momento de los agentes</p>
+            <p class="loredescript">¿Dualidad?, ¿Radianita?, ¿Que está pasando?</p>
+        </div>
+    </div>
+    <!--Empieza la linea de tiempo-->
+    
+    <script>
+        function openSidebar() {
+            console.log('sidebar');
+            document.querySelector('.sidebar').classList.add('open');
+            document.getElementById('close').style.display = 'block';
+            document.getElementById('overflow').style.overflow = 'hidden';
+            const video = document.getElementById("video");
+            video.play();
+    
+        }
+    
+        function closeSidebar() {
+            console.log('sidebar');
+            document.querySelector('.sidebar').classList.remove('open');
+            document.getElementById('close').style.display = 'none';
+            document.getElementById('overflow').style.overflow = 'visible';
+            const video = document.getElementById("video");
+            video.pause();
+        }
+        function openSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.add('open');
+          document.getElementById('hidden-button-cross').style.display ='block';
+          document.getElementById('overflow').style.overflow = 'hidden';
+        }
+      
+        function closeSidebarMenu() {
+          console.log('sidebar');
+          document.querySelector('.sidebar-mainpage').classList.remove('open');
+          document.getElementById('hidden-button-cross').style.display = 'none';
+          document.getElementById('overflow').style.overflow = 'visible';
+        }
+        function redirect(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+
+<script>
+    /*STICKY NAVBAR*/
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if ((window.pageYOffset - 10) >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+</html>
