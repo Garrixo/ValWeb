@@ -19,42 +19,7 @@
     <link rel="stylesheet" href="css/stylesvnuevo.css">
 
     <!--¿ORDENA AGENTES?-->
-    <script>
-        var clientVars = { "language": "es", "urlLocale": "es-es", "locale": "es_ES", "region": "1", "serverRegion": "us", "OVERWATCH_API_URL": "https://overwatch-api-prod.playoverwatch.com", "CLOUDFRONT_URL": "https://d1u1mce87gyfbn.cloudfront.net", "learnMore": "Más información", "codeFile": "https://static.playoverwatch.com/video/dva-code-1840e4fbda.mp3" };
-
-        window.blizzard = window.blizzard || {};
-        Object.keys(clientVars).forEach(function (key) {
-            window.blizzard[key] = clientVars[key];
-        });
-    </script>
-    <script>
-        function openSidebar() {
-          console.log('sidebar');
-          document.querySelector('.sidebar').classList.add('open');
-          document.getElementById('close').style.display ='block';
-          document.getElementById('overflow').style.overflow = 'hidden';
-        }
-      
-        function closeSidebar() {
-          console.log('sidebar');
-          document.querySelector('.sidebar').classList.remove('open');
-          document.getElementById('close').style.display = 'none';
-          document.getElementById('overflow').style.overflow = 'visible';
-        }
-        function openSidebarMenu() {
-          console.log('sidebar');
-          document.querySelector('.sidebar-mainpage').classList.add('open');
-          document.getElementById('hidden-button-cross').style.display ='block';
-          document.getElementById('overflow').style.overflow = 'hidden';
-        }
-      
-        function closeSidebarMenu() {
-          console.log('sidebar');
-          document.querySelector('.sidebar-mainpage').classList.remove('open');
-          document.getElementById('hidden-button-cross').style.display = 'none';
-          document.getElementById('overflow').style.overflow = 'visible';
-        }
-      </script>
+    
 </head>
 
 <body class="heroes es-es" id="overflow" itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -601,6 +566,42 @@
           }
         }
         </script>
+        <script>
+            var clientVars = { "language": "es", "urlLocale": "es-es", "locale": "es_ES", "region": "1", "serverRegion": "us", "OVERWATCH_API_URL": "https://overwatch-api-prod.playoverwatch.com", "CLOUDFRONT_URL": "https://d1u1mce87gyfbn.cloudfront.net", "learnMore": "Más información", "codeFile": "https://static.playoverwatch.com/video/dva-code-1840e4fbda.mp3" };
+    
+            window.blizzard = window.blizzard || {};
+            Object.keys(clientVars).forEach(function (key) {
+                window.blizzard[key] = clientVars[key];
+            });
+        </script>
+        <script>
+            function openSidebar() {
+              console.log('sidebar');
+              document.querySelector('.sidebar').classList.add('open');
+              document.getElementById('close').style.display ='block';
+              document.getElementById('overflow').style.overflow = 'hidden';
+            }
+          
+            function closeSidebar() {
+              console.log('sidebar');
+              document.querySelector('.sidebar').classList.remove('open');
+              document.getElementById('close').style.display = 'none';
+              document.getElementById('overflow').style.overflow = 'visible';
+            }
+            function openSidebarMenu() {
+              console.log('sidebar');
+              document.querySelector('.sidebar-mainpage').classList.add('open');
+              document.getElementById('hidden-button-cross').style.display ='block';
+              document.getElementById('overflow').style.overflow = 'hidden';
+            }
+          
+            function closeSidebarMenu() {
+              console.log('sidebar');
+              document.querySelector('.sidebar-mainpage').classList.remove('open');
+              document.getElementById('hidden-button-cross').style.display = 'none';
+              document.getElementById('overflow').style.overflow = 'visible';
+            }
+          </script>
     <script type="text/javascript" src="https://static.playoverwatch.com/overwatch-ui-44cd35d6a8.js"></script>
     <script type="text/javascript" src="https://static.playoverwatch.com/vendor-b2d9b4cfaf.js"></script>
     <script type="text/javascript" src="https://static.playoverwatch.com/app-b9b4fc2518.js"></script>
