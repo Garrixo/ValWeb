@@ -830,7 +830,7 @@ body {
   }
   .ag-timeline-card_desc {
     line-height: 1.45;
-  
+    font-family: Anton;
     font-size: 16px;
     color: #FFF;
   }

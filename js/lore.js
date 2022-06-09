@@ -1,15 +1,12 @@
-
-
 function openSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.add('open');
-    document.getElementById('close').style.display = 'block';
-    document.getElementById('overflow').style.overflow = 'hidden';
-    const video = document.getElementById("video");
-    video.play();
+  console.log('sidebar');
+  document.querySelector('.sidebar').classList.add('open');
+  document.getElementById('close').style.display = 'block';
+  document.getElementById('overflow').style.overflow = 'hidden';
+  const video = document.getElementById("video");
+  video.play();
 
 }
-
 function closeSidebar() {
     console.log('sidebar');
     document.querySelector('.sidebar').classList.remove('open');
@@ -120,4 +117,6 @@ if ((window.pageYOffset - 10) >= sticky) {
           
             });
           })(jQuery);
+
+
  
