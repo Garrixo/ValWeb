@@ -380,144 +380,6 @@ li {
     padding-top: 10px;
 }
 
-@media only screen and (max-width: 800px) {
-    .bbar {
-        display: none;
-        padding: 0px;
-    }
-
-    .imageag {
-        display: none;
-    }
-
-    nav {
-        display: none;
-        padding: 0px;
-    }
-
-    .uptitle {
-        text-overflow: ellipsis;
-    }
-
-    .mline {
-        display: block;
-        height: 56px;
-        float: right;
-        margin: 5px;
-    }
-
-    .subtitlesct {
-        font-size: 30px;
-        width: 600px;
-    }
-
-    .menu-mainpage {
-        display: hidden;
-
-    }
-
-    .titulo {
-        font-size: 90px;
-
-    }
-    .imgweaponsmenu{
-    display: none;
-    }
-    .subtitle {
-        width: 400px;
-    }
-
-    .derech {
-        padding-top: 50px;
-        padding-left: 100px;
-    }
-
-    .carousel-maps {
-        display: none;
-    }
-
-    .carouseltamaño {
-        display: none;
-    }
-
-    .clips {
-        padding-left: 100px;
-    }
-
-    .boo {
-        display: none;
-    }
-}
-
-/* MOVIL */
-/* MOVIL */
-/* MOVIL */
-@media only screen and (max-width: 500px) {
-    .linea {
-        display: none;
-    }
-
-    .titulo {
-        font-size: 50px;
-
-    }
-
-    .subtitlesct {
-        font-size: 18px;
-        width: 400px;
-        padding-bottom: 10px;
-    }
-
-    .fotofondo {
-        height: 500px;
-    }
-
-    .textbox {
-        padding-left: 30px;
-        margin-top: 0px;
-    }
-    .imgweaponsmenu{
-        display: none;
-        }
-    .boo {
-        display: none;
-    }
-
-    .title {
-
-        font-size: 250%;
-        color: white;
-    }
-
-    .derech {
-        padding-left: 30px;
-    }
-
-    .text-wepons {
-        margin-left: 30px;
-    }
-
-    .weapons {
-        height: 500px;
-    }
-
-    .Mapas {
-        height: 500px;
-    }
-
-    .text-maps {
-        margin-left: 30px;
-    }
-
-    .Clipeo {
-        height: 500px;
-    }
-
-    .clips {
-        padding: 15px;
-    }
-
-}
 
 /*STICKY NAVBAR*/
 
@@ -764,6 +626,7 @@ body {
   }
   
   .ag-timeline-block {
+    font-family: Tungsten-Bold, arial, georgia, sans-serif;
     padding: 300px 0;
   }
   .ag-timeline_title-box {
@@ -1062,3 +925,341 @@ body {
     }
   
   }
+  @media only screen and (max-width: 800px) {
+    .bbar {
+        display: none;
+        padding: 0px;
+    }
+
+    .imageag {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        padding: 0px;
+    }
+
+    .uptitle {
+        text-overflow: ellipsis;
+    }
+
+    .mline {
+        display: block;
+        height: 56px;
+        float: right;
+        margin: 5px;
+    }
+
+    .subtitlesct {
+        font-size: 30px;
+        width: 600px;
+    }
+
+    .menu-mainpage {
+        display: hidden;
+
+    }
+
+    .titulo {
+        font-size: 90px;
+
+    }
+    .imgweaponsmenu{
+    display: none;
+    }
+    .subtitle {
+        width: 400px;
+    }
+
+    .derech {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    .carousel-maps {
+        display: none;
+    }
+
+    .carouseltamaño {
+        display: none;
+    }
+
+    .clips {
+        padding-left: 100px;
+    }
+
+    .boo {
+        display: none;
+    }
+    .loretitle{
+        font-size: 100px;
+    }
+    .loredescript{
+        font-size: 50px;
+    }
+    .loredescript{
+        font-size: 50px;
+    }
+    .loreinfo{
+        width: 600px;
+    }
+}
+
+/* MOVIL */
+/* MOVIL */
+/* MOVIL */
+@media only screen and (max-width: 500px) {
+    .linea {
+        display: none;
+    }
+
+    .titulo {
+        font-size: 50px;
+
+    }
+
+    .subtitlesct {
+        font-size: 18px;
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    .fotofondo {
+        height: 500px;
+    }
+
+    .textbox {
+        padding-left: 30px;
+        margin-top: 0px;
+    }
+    .imgweaponsmenu{
+        display: none;
+        }
+    .boo {
+        display: none;
+    }
+
+    .title {
+
+        font-size: 250%;
+        color: white;
+    }
+
+    .derech {
+        padding-left: 30px;
+    }
+
+    .text-wepons {
+        margin-left: 30px;
+    }
+
+    .weapons {
+        height: 500px;
+    }
+
+    .Mapas {
+        height: 500px;
+    }
+
+    .text-maps {
+        margin-left: 30px;
+    }
+
+    .Clipeo {
+        height: 500px;
+    }
+
+    .clips {
+        padding: 15px;
+    }
+    .loretitle{
+        font-size: 70px;
+    }
+    .loredescript{
+        font-size: 30px;
+    }
+    .loredescript{
+        font-size: 30px;
+    }
+    .loreinfo{
+        width: 400px;
+    }
+
+}
+
+/*Flecha animada*/
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 50px;
+	margin-top: 40px;
+}
+
+.arrowscontainer{
+    margin-top: -5px;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 -8px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+  margin-left: 6px;
+}
+
+.unu, .doi, .trei
+{
+
+  margin-left: 6px;
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
