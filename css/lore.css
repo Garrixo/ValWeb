@@ -27,6 +27,7 @@
 
 html{
     overflow-x: hidden;
+    background-color: #ede8e0;
 }
 
 li {
@@ -575,7 +576,7 @@ font-size: 50px;
 
 /*TIMELINE 4 LORE*/
 body {
-    background-color: #000;
+    background-color: #ede8e0;
   
     overflow-x: hidden;
   }
@@ -639,7 +640,6 @@ body {
     color: rgb(84, 89, 95);
   }
   .ag-timeline_title {
-    background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
   
@@ -647,7 +647,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     text-fill-color: transparent;
-    color: transparent;
+    color: #ff4655;
   
     font-size: 80px;
   }
@@ -670,8 +670,9 @@ body {
     position: relative;
   }
   .ag-timeline_line {
-    width: 2px;
-    background-color: #393935;
+    width: 4px;
+    background-color: #ede8e0;
+    border: 2px solid black;
   
     position: absolute;
     top: 2px;
@@ -690,7 +691,7 @@ body {
   .ag-timeline_line-progress {
     width: 100%;
     height: 20%;
-    background-color: #FF0;
+    background-color: #ff4655;
   }
   
   .ag-timeline-card_box {
@@ -710,21 +711,21 @@ body {
     height: 50px;
     line-height: 50px;
     width: 50px;
-    border: 3px solid #FF0;
-    background-color: #1d1d1b;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: white;
   
     text-align: center;
     font-family: 'ESL Legend', sans-serif;
     font-size: 20px;
-    color: #FFF;
+    color: #ff4655;
   
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
   }
   .js-ag-active .ag-timeline-card_point {
-    color: #1d1d1b;
-    background-color: #FF0;
+    color: white;
+    background-color: #ff4655;
   }
   .ag-timeline-card_meta-box {
     display: inline-block;
@@ -735,7 +736,7 @@ body {
     font-family: 'ESL Legend', sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #FF0;
+    color: #ff4655;
   }
   .ag-timeline-card_item {
     display: inline-block;
@@ -1110,8 +1111,8 @@ body {
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
    
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
   margin: 0 0 -8px 4px;
   
   width: 16px;
@@ -1175,7 +1176,7 @@ body {
   width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   top: 170px;
 }
 
@@ -1184,12 +1185,12 @@ body {
   width: 2px;
   display: block;
   margin: 5px auto;
-  background: white;
+  background: rgb(0, 0, 0);
   position: relative;
   
   height: 4px;
   width: 4px;
-  border: 2px solid #fff;
+  border: 2px solid rgb(0, 0, 0);
   -webkit-border-radius: 8px;
           border-radius: 8px;
 }
